@@ -1,6 +1,6 @@
 ---
 name: apex-theme-hyper-charts
-description: Restyle an Oracle APEX app to look like the Setproduct Hyper Charts kit (1000+ chart blocks: indigo and fresh green on lavender-tinted cards, rounded and airy) using native Universal Theme components plus a drop-in CSS file. Use when the user asks for the Hyper Charts theme/look/style in APEX, or picks it from the apex-setproduct-themes catalog.
+description: "Restyle an Oracle APEX app to look like the Setproduct Hyper Charts kit (1000+ chart blocks: indigo and fresh green on lavender-tinted cards, rounded and airy) using native Universal Theme components plus a drop-in CSS file. Use when the user asks for the Hyper Charts theme/look/style in APEX, or picks it from the apex-setproduct-themes catalog."
 ---
 
 # Setproduct Hyper Charts -> Oracle APEX

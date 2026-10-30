@@ -1,6 +1,6 @@
 ---
 name: apex-theme-material-x
-description: Restyle an Oracle APEX app to look like the Setproduct Material X kit (Material beyond Material: Manrope type, deep indigo + teal, top-notch rounded shapes) using native Universal Theme components plus a drop-in CSS file. Use when the user asks for the Material X theme/look/style in APEX, or picks it from the apex-setproduct-themes catalog.
+description: "Restyle an Oracle APEX app to look like the Setproduct Material X kit (Material beyond Material: Manrope type, deep indigo + teal, top-notch rounded shapes) using native Universal Theme components plus a drop-in CSS file. Use when the user asks for the Material X theme/look/style in APEX, or picks it from the apex-setproduct-themes catalog."
 ---
 
 # Setproduct Material X -> Oracle APEX

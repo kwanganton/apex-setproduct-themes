@@ -1,6 +1,6 @@
 ---
 name: apex-theme-neolex
-description: Restyle an Oracle APEX app to look like the Setproduct Neolex kit (8dp-grid responsive dashboard: bright azure, orange and purple accents, crisp light greys) using native Universal Theme components plus a drop-in CSS file. Use when the user asks for the Neolex theme/look/style in APEX, or picks it from the apex-setproduct-themes catalog.
+description: "Restyle an Oracle APEX app to look like the Setproduct Neolex kit (8dp-grid responsive dashboard: bright azure, orange and purple accents, crisp light greys) using native Universal Theme components plus a drop-in CSS file. Use when the user asks for the Neolex theme/look/style in APEX, or picks it from the apex-setproduct-themes catalog."
 ---
 
 # Setproduct Neolex -> Oracle APEX

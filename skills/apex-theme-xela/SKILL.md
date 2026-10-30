@@ -1,6 +1,6 @@
 ---
 name: apex-theme-xela
-description: Restyle an Oracle APEX app to look like the Setproduct Xela kit (cross-platform (React/Swift/Android/Flutter) system: royal blue, crisp white, easy dark toggle) using native Universal Theme components plus a drop-in CSS file. Use when the user asks for the Xela theme/look/style in APEX, or picks it from the apex-setproduct-themes catalog.
+description: "Restyle an Oracle APEX app to look like the Setproduct Xela kit (cross-platform (React/Swift/Android/Flutter) system: royal blue, crisp white, easy dark toggle) using native Universal Theme components plus a drop-in CSS file. Use when the user asks for the Xela theme/look/style in APEX, or picks it from the apex-setproduct-themes catalog."
 ---
 
 # Setproduct Xela -> Oracle APEX

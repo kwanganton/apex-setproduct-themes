@@ -1,6 +1,6 @@
 ---
 name: apex-theme-charts
-description: Restyle an Oracle APEX app to look like the Setproduct Figma Charts kit (component-driven chart library: pastel-bright violet/blue/mint/peach series on clean white cards) using native Universal Theme components plus a drop-in CSS file. Use when the user asks for the Figma Charts theme/look/style in APEX, or picks it from the apex-setproduct-themes catalog.
+description: "Restyle an Oracle APEX app to look like the Setproduct Figma Charts kit (component-driven chart library: pastel-bright violet/blue/mint/peach series on clean white cards) using native Universal Theme components plus a drop-in CSS file. Use when the user asks for the Figma Charts theme/look/style in APEX, or picks it from the apex-setproduct-themes catalog."
 ---
 
 # Setproduct Figma Charts -> Oracle APEX

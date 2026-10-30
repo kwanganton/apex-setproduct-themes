@@ -1,6 +1,6 @@
 ---
 name: apex-theme-claylo
-description: Restyle an Oracle APEX app to look like the Setproduct Claylo kit (claymorphism: warm cream canvas, puffy pastel clay cards, chunky 3D push buttons, Fredoka) using native Universal Theme components plus a drop-in CSS file. Use when the user asks for the Claylo theme/look/style in APEX, or picks it from the apex-setproduct-themes catalog.
+description: "Restyle an Oracle APEX app to look like the Setproduct Claylo kit (claymorphism: warm cream canvas, puffy pastel clay cards, chunky 3D push buttons, Fredoka) using native Universal Theme components plus a drop-in CSS file. Use when the user asks for the Claylo theme/look/style in APEX, or picks it from the apex-setproduct-themes catalog."
 ---
 
 # Setproduct Claylo -> Oracle APEX

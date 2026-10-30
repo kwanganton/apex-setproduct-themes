@@ -1,6 +1,6 @@
 ---
 name: apex-theme-panda
-description: Restyle an Oracle APEX app to look like the Setproduct Panda kit (clean modern web-app dashboard: white cards, dark navy sidebar, confident blue) using native Universal Theme components plus a drop-in CSS file. Use when the user asks for the Panda theme/look/style in APEX, or picks it from the apex-setproduct-themes catalog.
+description: "Restyle an Oracle APEX app to look like the Setproduct Panda kit (clean modern web-app dashboard: white cards, dark navy sidebar, confident blue) using native Universal Theme components plus a drop-in CSS file. Use when the user asks for the Panda theme/look/style in APEX, or picks it from the apex-setproduct-themes catalog."
 ---
 
 # Setproduct Panda -> Oracle APEX

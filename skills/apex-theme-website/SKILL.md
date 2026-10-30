@@ -1,6 +1,6 @@
 ---
 name: apex-theme-website
-description: Restyle an Oracle APEX app to look like the Setproduct Figma Website templates kit (140+ dark & light website blocks: trustworthy blue, coral accent, mixable light/dark sections) using native Universal Theme components plus a drop-in CSS file. Use when the user asks for the Figma Website templates theme/look/style in APEX, or picks it from the apex-setproduct-themes catalog.
+description: "Restyle an Oracle APEX app to look like the Setproduct Figma Website templates kit (140+ dark & light website blocks: trustworthy blue, coral accent, mixable light/dark sections) using native Universal Theme components plus a drop-in CSS file. Use when the user asks for the Figma Website templates theme/look/style in APEX, or picks it from the apex-setproduct-themes catalog."
 ---
 
 # Setproduct Figma Website templates -> Oracle APEX

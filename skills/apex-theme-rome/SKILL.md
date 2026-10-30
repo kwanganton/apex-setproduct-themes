@@ -1,6 +1,6 @@
 ---
 name: apex-theme-rome
-description: Restyle an Oracle APEX app to look like the Setproduct Rome kit (airy light dashboard: periwinkle blue, peach and pink accents, soft tinted shadows) using native Universal Theme components plus a drop-in CSS file. Use when the user asks for the Rome theme/look/style in APEX, or picks it from the apex-setproduct-themes catalog.
+description: "Restyle an Oracle APEX app to look like the Setproduct Rome kit (airy light dashboard: periwinkle blue, peach and pink accents, soft tinted shadows) using native Universal Theme components plus a drop-in CSS file. Use when the user asks for the Rome theme/look/style in APEX, or picks it from the apex-setproduct-themes catalog."
 ---
 
 # Setproduct Rome -> Oracle APEX

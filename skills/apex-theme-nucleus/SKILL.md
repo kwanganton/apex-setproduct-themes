@@ -1,6 +1,6 @@
 ---
 name: apex-theme-nucleus
-description: Restyle an Oracle APEX app to look like the Setproduct Nucleus UI kit (1000+ component mobile system: vivid violet, sunshine-yellow highlights, rounded friendly UI) using native Universal Theme components plus a drop-in CSS file. Use when the user asks for the Nucleus UI theme/look/style in APEX, or picks it from the apex-setproduct-themes catalog.
+description: "Restyle an Oracle APEX app to look like the Setproduct Nucleus UI kit (1000+ component mobile system: vivid violet, sunshine-yellow highlights, rounded friendly UI) using native Universal Theme components plus a drop-in CSS file. Use when the user asks for the Nucleus UI theme/look/style in APEX, or picks it from the apex-setproduct-themes catalog."
 ---
 
 # Setproduct Nucleus UI -> Oracle APEX

@@ -1,6 +1,6 @@
 ---
 name: apex-theme-appka-ios
-description: Restyle an Oracle APEX app to look like the Setproduct Appka iOS kit (Apple-spec iOS system: grouped inset lists, SF-style type, system blue-violet, true-black dark) using native Universal Theme components plus a drop-in CSS file. Use when the user asks for the Appka iOS theme/look/style in APEX, or picks it from the apex-setproduct-themes catalog.
+description: "Restyle an Oracle APEX app to look like the Setproduct Appka iOS kit (Apple-spec iOS system: grouped inset lists, SF-style type, system blue-violet, true-black dark) using native Universal Theme components plus a drop-in CSS file. Use when the user asks for the Appka iOS theme/look/style in APEX, or picks it from the apex-setproduct-themes catalog."
 ---
 
 # Setproduct Appka iOS -> Oracle APEX

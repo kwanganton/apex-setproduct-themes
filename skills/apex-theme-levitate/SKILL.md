@@ -1,6 +1,6 @@
 ---
 name: apex-theme-levitate
-description: Restyle an Oracle APEX app to look like the Setproduct Levitate kit (3D scene presentation style: jet-black stage, neon sky/green/violet, glassy floating panels) using native Universal Theme components plus a drop-in CSS file. Use when the user asks for the Levitate theme/look/style in APEX, or picks it from the apex-setproduct-themes catalog.
+description: "Restyle an Oracle APEX app to look like the Setproduct Levitate kit (3D scene presentation style: jet-black stage, neon sky/green/violet, glassy floating panels) using native Universal Theme components plus a drop-in CSS file. Use when the user asks for the Levitate theme/look/style in APEX, or picks it from the apex-setproduct-themes catalog."
 ---
 
 # Setproduct Levitate -> Oracle APEX
