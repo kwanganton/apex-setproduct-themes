@@ -10,6 +10,11 @@ description: "Restyle an Oracle APEX app to look like the Setproduct Eclipse kit
 Read `../apex-setproduct-themes/SKILL.md` first for the shared method (native-first rules, install steps,
 component map). This file only holds what is specific to Eclipse.
 
+## Preview
+![Eclipse on APEX Universal Theme](https://raw.githubusercontent.com/kwanganton/apex-setproduct-themes/main/docs/screenshots/eclipse.jpg)
+
+*Dark mode on Oracle's Universal Theme reference app (APEX 26.2, Interactive Report page, stock markup + this theme's CSS only).*
+
 ## The look
 - Near-black canvas with slightly lifted navy panels; content floats on 12px-radius cards.
 - Electric violet primary, cyan/green/red for data; gradient (violet to blue) hero KPI cards.

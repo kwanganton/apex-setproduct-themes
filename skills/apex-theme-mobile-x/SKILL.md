@@ -10,6 +10,11 @@ description: "Restyle an Oracle APEX app to look like the Setproduct Mobile X ki
 Read `../apex-setproduct-themes/SKILL.md` first for the shared method (native-first rules, install steps,
 component map). This file only holds what is specific to Mobile X.
 
+## Preview
+![Mobile X on APEX Universal Theme](https://raw.githubusercontent.com/kwanganton/apex-setproduct-themes/main/docs/screenshots/mobile-x.jpg)
+
+*Light mode on Oracle's Universal Theme reference app (APEX 26.2, Interactive Report page, stock markup + this theme's CSS only).*
+
 ## The look
 - Clear blue primary with a lime-green highlight and blush-pink tags.
 - iOS specs adopted to the Android 8dp grid; every component has a dark variant.

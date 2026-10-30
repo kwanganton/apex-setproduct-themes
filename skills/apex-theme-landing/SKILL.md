@@ -10,6 +10,11 @@ description: "Restyle an Oracle APEX app to look like the Setproduct Figma Landi
 Read `../apex-setproduct-themes/SKILL.md` first for the shared method (native-first rules, install steps,
 component map). This file only holds what is specific to Figma Landing Pages.
 
+## Preview
+![Figma Landing Pages on APEX Universal Theme](https://raw.githubusercontent.com/kwanganton/apex-setproduct-themes/main/docs/screenshots/landing.jpg)
+
+*Light mode on Oracle's Universal Theme reference app (APEX 26.2, Interactive Report page, stock markup + this theme's CSS only).*
+
 ## The look
 - Bold colour-block sections (violet, sunshine yellow, mint) with white cards on top.
 - Chunky headings, rounded 12-20px cards, tag-style labels.

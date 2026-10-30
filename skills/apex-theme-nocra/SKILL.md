@@ -10,6 +10,11 @@ description: "Restyle an Oracle APEX app to look like the Setproduct Nocra kit (
 Read `../apex-setproduct-themes/SKILL.md` first for the shared method (native-first rules, install steps,
 component map). This file only holds what is specific to Nocra.
 
+## Preview
+![Nocra on APEX Universal Theme](https://raw.githubusercontent.com/kwanganton/apex-setproduct-themes/main/docs/screenshots/nocra.jpg)
+
+*Dark mode on Oracle's Universal Theme reference app (APEX 26.2, Interactive Report page, stock markup + this theme's CSS only).*
+
 ## The look
 - Deep midnight-navy canvas with soft glows; mint-green primary actions.
 - Large rounded prompt inputs, prompt-history lists, AI status panels, style selectors.

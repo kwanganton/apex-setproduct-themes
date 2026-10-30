@@ -23,6 +23,8 @@ from themes import THEMES  # noqa: E402
 SKILLS = ROOT / "skills"
 CORE = SKILLS / "apex-setproduct-themes"
 BASE_CSS = (ROOT / "src" / "base.css").read_text(encoding="utf-8")
+SHOTS = ROOT / "docs" / "screenshots"
+RAW = "https://raw.githubusercontent.com/kwanganton/apex-setproduct-themes/main/docs/screenshots"
 
 SHADOWS = {
     "soft": ("0 1px 2px rgba(16,24,40,.05), 0 1px 3px rgba(16,24,40,.07)",
@@ -187,7 +189,7 @@ description: "{description}"
 
 Read `../apex-setproduct-themes/SKILL.md` first for the shared method (native-first rules, install steps,
 component map). This file only holds what is specific to {name}.
-
+{preview_md(theme)}
 ## The look
 {look}
 
@@ -234,6 +236,34 @@ Paste into each Chart region's **Attributes > Advanced > Initialization JavaScri
 """
 
 
+def has_shot(theme):
+    return (SHOTS / f"{theme['slug']}.jpg").exists()
+
+
+def preview_md(theme):
+    if not has_shot(theme):
+        return ""
+    return (
+        f"\n## Preview\n![{theme['name']} on APEX Universal Theme]({RAW}/{theme['slug']}.jpg)\n\n"
+        f"*{theme['modes'][0].capitalize()} mode on Oracle's Universal Theme reference app (APEX 26.2, "
+        "Interactive Report page, stock markup + this theme's CSS only).*\n"
+    )
+
+
+def screenshot_grid(link_prefix):
+    cells = []
+    for t in THEMES:
+        if not has_shot(t):
+            continue
+        cells.append(
+            f'<td width="50%" valign="top"><a href="{link_prefix}apex-theme-{t["slug"]}/SKILL.md">'
+            f'<img src="docs/screenshots/{t["slug"]}.jpg" alt="{html.escape(t["name"])} theme"></a><br>'
+            f'<b>{html.escape(t["name"])}</b> &middot; {t["modes"][0]}<br><sub>{html.escape(t["summary"])}</sub></td>'
+        )
+    rows = ["<tr>" + "".join(cells[i:i + 2]) + "</tr>" for i in range(0, len(cells), 2)]
+    return "<table>\n" + "\n".join(rows) + "\n</table>"
+
+
 def theme_table(link_prefix):
     rows = ["| Theme | Category | Modes | Look |", "|---|---|---|---|"]
     for t in THEMES:
@@ -244,10 +274,10 @@ def theme_table(link_prefix):
     return "\n".join(rows)
 
 
-def replace_block(path, body):
+def replace_block(path, body, marker="THEMES"):
     text = path.read_text(encoding="utf-8")
-    new = re.sub(r"(<!-- THEMES:START -->\n).*?(\n<!-- THEMES:END -->)",
-                 lambda m: m.group(1) + body + m.group(2), text, flags=re.S)
+    new = re.sub(rf"(<!-- {marker}:START -->)\n.*?(<!-- {marker}:END -->)",
+                 lambda m: m.group(1) + "\n" + body + "\n" + m.group(2), text, flags=re.S)
     path.write_text(new, encoding="utf-8")
 
 
@@ -258,8 +288,11 @@ def gallery():
         tk = dict(tokens_for(t, m))
         chips = "".join(f'<span style="background:{c}" title="{c}"></span>' for c in t["chart"])
         style = "; ".join(f"--sp-{k}: {v}" for k, v in tk.items())
+        shot = (f'<a href="screenshots/{t["slug"]}.jpg"><img class="shot" src="screenshots/{t["slug"]}.jpg" '
+                f'alt="{html.escape(t["name"])} on APEX" loading="lazy"></a>') if has_shot(t) else ""
         cards.append(f"""
 <article class="card" style="{html.escape(style)}">
+  {shot}
   <div class="mock">
     <aside><i></i><i class="on"></i><i></i><i></i></aside>
     <main>
@@ -290,6 +323,7 @@ header p {{ margin:0; color:var(--muted) }}
 .card {{ border:1px solid var(--line); border-radius:14px; padding:12px; background:var(--page) }}
 .card h2 {{ margin:12px 4px 2px; font-size:17px }} .card p {{ margin:0 4px 6px; color:var(--muted); font-size:13px }}
 .card small {{ margin:0 4px; color:var(--muted); font-size:12px }} .card a {{ color:inherit }}
+.shot {{ display:block; width:100%; height:auto; border-radius:10px; border:1px solid var(--line); margin-bottom:10px }}
 .mock {{ display:flex; height:170px; border-radius:10px; overflow:hidden; background:var(--sp-bg); font-family:var(--sp-font); color:var(--sp-text); border:1px solid var(--sp-border) }}
 .mock aside {{ width:52px; background:var(--sp-nav-bg); padding:10px 8px; display:flex; flex-direction:column; gap:7px }}
 .mock aside i {{ height:9px; border-radius:var(--sp-nav-item-radius,4px); background:color-mix(in srgb,var(--sp-nav-text) 35%,transparent) }}
@@ -323,6 +357,7 @@ def main():
         (d / "SKILL.md").write_text(skill_md(t), encoding="utf-8")
     replace_block(CORE / "SKILL.md", theme_table("../"))
     replace_block(ROOT / "README.md", theme_table("skills/"))
+    replace_block(ROOT / "README.md", screenshot_grid("skills/"), "SCREENSHOTS")
     (ROOT / "docs").mkdir(exist_ok=True)
     (ROOT / "docs" / "index.html").write_text(gallery(), encoding="utf-8")
     print(f"built {len(THEMES)} themes")
