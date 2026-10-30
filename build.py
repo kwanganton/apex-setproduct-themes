@@ -170,7 +170,8 @@ def skill_md(theme):
         f"This kit is {default}-only; no second style is needed."
     )
     description = (
-        f"Restyle an Oracle APEX app to look like the Setproduct {name} kit ({theme['summary']}) using native "
+        f"Restyle an Oracle APEX app to look like the Setproduct {name}{'' if 'kit' in name.lower() else ' kit'} "
+        f"({theme['summary']}) using native "
         f"Universal Theme components plus a drop-in CSS file. Use when the user asks for the {name} theme/look/style "
         "in APEX, or picks it from the apex-setproduct-themes catalog."
     )
