@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>APEX Setproduct Themes</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fredoka:wght@500;600;700&family=Geist:wght@400;500;600;700&family=Inter:wght@400;500;600&family=Inter:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&family=Nunito+Sans:wght@400;600;700;800&family=Outfit:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700&family=Poppins:wght@400;500;600;700;800&family=Readex+Pro:wght@300;400;500;600&family=Red+Hat+Display:wght@500;700&family=Roboto:wght@400;500;700&family=Sora:wght@600;700;800&family=Space+Grotesk:wght@500;700&display=swap">
+<style>
+:root { --page:#f6f6f8; --ink:#16161d; --muted:#6b6b7b; --line:#e4e4ea; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --page:#101014; --ink:#f1f1f5; --muted:#a0a0ad; --line:#2a2a33; } }
+:root[data-theme="dark"] { --page:#101014; --ink:#f1f1f5; --muted:#a0a0ad; --line:#2a2a33; }
+* { box-sizing:border-box }
+body { margin:0; background:var(--page); color:var(--ink); font:15px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif; }
+header { max-width:1200px; margin:0 auto; padding:40px 16px 8px }
+header h1 { margin:0 0 6px; font-size:28px; letter-spacing:-.02em }
+header p { margin:0; color:var(--muted) }
+.grid { max-width:1200px; margin:0 auto; padding:24px 16px 64px; display:grid; gap:20px; grid-template-columns:repeat(auto-fill,minmax(270px,1fr)) }
+.card { border:1px solid var(--line); border-radius:14px; padding:12px; background:var(--page) }
+.card h2 { margin:12px 4px 2px; font-size:17px } .card p { margin:0 4px 6px; color:var(--muted); font-size:13px }
+.card small { margin:0 4px; color:var(--muted); font-size:12px } .card a { color:inherit }
+.mock { display:flex; height:170px; border-radius:10px; overflow:hidden; background:var(--sp-bg); font-family:var(--sp-font); color:var(--sp-text); border:1px solid var(--sp-border) }
+.mock aside { width:52px; background:var(--sp-nav-bg); padding:10px 8px; display:flex; flex-direction:column; gap:7px }
+.mock aside i { height:9px; border-radius:var(--sp-nav-item-radius,4px); background:color-mix(in srgb,var(--sp-nav-text) 35%,transparent) }
+.mock aside i.on { background:var(--sp-nav-active-bg); outline:1px solid color-mix(in srgb,var(--sp-nav-active-text) 40%,transparent) }
+.mock main { flex:1; padding:10px; display:flex; flex-direction:column; gap:9px }
+.panel { background:var(--sp-surface); border:1px solid var(--sp-border); border-radius:var(--sp-radius-lg); box-shadow:var(--sp-shadow-sm); padding:10px }
+.panel b { display:block; font-size:11px; color:var(--sp-text-muted); font-weight:500 }
+.panel strong { font-family:var(--sp-font-heading); font-size:20px; letter-spacing:-.02em }
+.chips { display:flex; gap:3px; margin-top:6px } .chips span { flex:1; height:16px; border-radius:3px }
+.row { display:flex; gap:6px }
+.row button { font:600 11px var(--sp-font); padding:6px 10px; border-radius:var(--sp-btn-radius); border:1px solid var(--sp-border); background:var(--sp-surface); color:var(--sp-text); text-transform:var(--sp-btn-transform,none) }
+.row button.hot { background:var(--sp-primary); color:var(--sp-primary-contrast); border-color:transparent; box-shadow:var(--sp-btn-hot-shadow,none) }
+</style></head>
+<body><header><h1>APEX Setproduct Themes</h1>
+<p>22 Setproduct kits translated to Oracle APEX Universal Theme. Each card renders that theme's real tokens.</p></header>
+<section class="grid">
+<article class="card" style="--sp-font: &quot;Inter&quot;, system-ui, -apple-system, &quot;Segoe UI&quot;, Roboto, sans-serif; --sp-font-heading: &quot;Inter&quot;, system-ui, -apple-system, &quot;Segoe UI&quot;, Roboto, sans-serif; --sp-primary: #5B2EF0; --sp-primary-contrast: #FFFFFF; --sp-primary-shade: color-mix(in srgb, var(--sp-primary) 14%, transparent); --sp-accent: #04BCF4; --sp-accent-contrast: #FFFFFF; --sp-accent-shade: color-mix(in srgb, var(--sp-accent) 16%, transparent); --sp-success: #14BC3C; --sp-warning: #F5A524; --sp-danger: #DC3434; --sp-info: #0B4CEC; --sp-bg: #08080F; --sp-surface: #12121C; --sp-surface-2: #1A1A28; --sp-border: #262638; --sp-text: #F4F4FA; --sp-text-muted: #9A9AB5; --sp-highlight: color-mix(in srgb, var(--sp-primary) 10%, var(--sp-surface)); --sp-field-bg: var(--sp-surface); --sp-field-border: var(--sp-border); --sp-header-bg: #08080F; --sp-header-text: var(--sp-text); --sp-nav-bg: #0C0C14; --sp-nav-text: #B3B3CC; --sp-nav-hover-bg: color-mix(in srgb, var(--sp-nav-active-text) 8%, transparent); --sp-nav-active-bg: #5B2EF0; --sp-nav-active-text: #FFFFFF; --sp-nav-item-radius: 8px; --sp-nav-item-inset: 8px; --sp-radius-sm: 6px; --sp-radius-md: 8px; --sp-radius-lg: 14px; --sp-radius-pill: 999px; --sp-btn-radius: 8px; --sp-field-radius: 8px; --sp-shadow-sm: 0 0 0 1px rgba(255,255,255,.03); --sp-shadow-md: 0 8px 24px rgba(0,0,0,.45); --sp-shadow-lg: 0 24px 60px rgba(0,0,0,.55), 0 0 48px color-mix(in srgb, var(--sp-primary) 18%, transparent)">
+  <div class="mock">
+    <aside><i></i><i class="on"></i><i></i><i></i></aside>
+    <main>
+      <div class="panel"><b>Revenue</b><strong>$42,180</strong><div class="chips"><span style="background:#5B2EF0" title="#5B2EF0"></span><span style="background:#04BCF4" title="#04BCF4"></span><span style="background:#14BC3C" title="#14BC3C"></span><span style="background:#F5A524" title="#F5A524"></span><span style="background:#DC3434" title="#DC3434"></span><span style="background:#A78BFA" title="#A78BFA"></span><span style="background:#0B4CEC" title="#0B4CEC"></span><span style="background:#F472B6" title="#F472B6"></span></div></div>
+      <div class="row"><button class="hot">Primary</button><button>Secondary</button></div>
+    </main>
+  </div>
+  <h2>Eclipse</h2>
+  <p>dark-first data dashboard: near-black canvas, electric violet and cyan, gradient KPI cards</p>
+  <small>Dashboard &middot; dark, light &middot; <a href="https://www.setproduct.com/templates/eclipse">kit</a></small>
+</article>
+<article class="card" style="--sp-font: &quot;Inter&quot;, system-ui, -apple-system, &quot;Segoe UI&quot;, Roboto, sans-serif; --sp-font-heading: &quot;Inter&quot;, system-ui, -apple-system, &quot;Segoe UI&quot;, Roboto, sans-serif; --sp-primary: #3C84F4; --sp-primary-contrast: #FFFFFF; --sp-primary-shade: color-mix(in srgb, var(--sp-primary) 14%, transparent); --sp-accent: #24C45C; --sp-accent-contrast: #FFFFFF; --sp-accent-shade: color-mix(in srgb, var(--sp-accent) 16%, transparent); --sp-success: #24C45C; --sp-warning: #ECB40C; --sp-danger: #F04438; --sp-info: #2C5C9C; --sp-bg: #F5F7FB; --sp-surface: #FFFFFF; --sp-surface-2: #F8FAFC; --sp-border: #E6EAF0; --sp-text: #0C141C; --sp-text-muted: #6B7785; --sp-highlight: color-mix(in srgb, var(--sp-primary) 10%, var(--sp-surface)); --sp-field-bg: var(--sp-surface); --sp-field-border: var(--sp-border); --sp-header-bg: var(--sp-surface); --sp-header-text: var(--sp-text); --sp-nav-bg: #0C141C; --sp-nav-text: #A9B4C2; --sp-nav-border: #0C141C; --sp-nav-hover-bg: rgba(255,255,255,.06); --sp-nav-active-bg: rgba(60,132,244,.22); --sp-nav-active-text: #FFFFFF; --sp-nav-item-radius: 8px; --sp-nav-item-inset: 10px; --sp-radius-sm: 6px; --sp-radius-md: 8px; --sp-radius-lg: 12px; --sp-radius-pill: 999px; --sp-btn-radius: 8px; --sp-field-radius: 8px; --sp-shadow-sm: 0 1px 2px rgba(16,24,40,.05), 0 1px 3px rgba(16,24,40,.07); --sp-shadow-md: 0 4px 12px rgba(16,24,40,.08); --sp-shadow-lg: 0 16px 40px rgba(16,24,40,.12)">
+  <div class="mock">
+    <aside><i></i><i class="on"></i><i></i><i></i></aside>
+    <main>
+      <div class="panel"><b>Revenue</b><strong>$42,180</strong><div class="chips"><span style="background:#3C84F4" title="#3C84F4"></span><span style="background:#24C45C" title="#24C45C"></span><span style="background:#ECB40C" title="#ECB40C"></span><span style="background:#F04438" title="#F04438"></span><span style="background:#6C9CF4" title="#6C9CF4"></span><span style="background:#2C5C9C" title="#2C5C9C"></span><span style="background:#9B8AFB" title="#9B8AFB"></span><span style="background:#14B8A6" title="#14B8A6"></span></div></div>
+      <div class="row"><button class="hot">Primary</button><button>Secondary</button></div>
+    </main>
+  </div>
+  <h2>Panda</h2>
+  <p>clean modern web-app dashboard: white cards, dark navy sidebar, confident blue</p>
+  <small>Dashboard &middot; light, dark &middot; <a href="https://www.setproduct.com/templates/panda">kit</a></small>
+</article>
+<article class="card" style="--sp-font: &quot;DM Sans&quot;, system-ui, -apple-system, &quot;Segoe UI&quot;, Roboto, sans-serif; --sp-font-heading: &quot;DM Sans&quot;, system-ui, -apple-system, &quot;Segoe UI&quot;, Roboto, sans-serif; --sp-primary: #4C74FC; --sp-primary-contrast: #FFFFFF; --sp-primary-shade: color-mix(in srgb, var(--sp-primary) 14%, transparent); --sp-accent: #FCA44C; --sp-accent-contrast: #FFFFFF; --sp-accent-shade: color-mix(in srgb, var(--sp-accent) 16%, transparent); --sp-success: #2FB67C; --sp-warning: #FCA44C; --sp-danger: #F2617A; --sp-info: #8CA4FC; --sp-bg: #F4F5FC; --sp-surface: #FFFFFF; --sp-surface-2: #F7F8FE; --sp-border: #E7EAF7; --sp-text: #1B1F3B; --sp-text-muted: #7A80A6; --sp-highlight: #EEF2FF; --sp-field-bg: var(--sp-surface); --sp-field-border: var(--sp-border); --sp-header-bg: var(--sp-surface); --sp-header-text: var(--sp-text); --sp-nav-bg: #FFFFFF; --sp-nav-text: #5D6488; --sp-nav-hover-bg: color-mix(in srgb, var(--sp-nav-active-text) 8%, transparent); --sp-nav-active-bg: #EEF2FF; --sp-nav-active-text: #4C74FC; --sp-nav-item-radius: 12px; --sp-nav-item-inset: 12px; --sp-radius-sm: 8px; --sp-radius-md: 12px; --sp-radius-lg: 20px; --sp-radius-pill: 999px; --sp-btn-radius: 12px; --sp-field-radius: 12px; --sp-border-width: 0px; --sp-shadow-sm: 0 2px 8px color-mix(in srgb, var(--sp-primary) 8%, transparent); --sp-shadow-md: 0 8px 24px color-mix(in srgb, var(--sp-primary) 12%, transparent); --sp-shadow-lg: 0 24px 48px color-mix(in srgb, var(--sp-primary) 16%, transparent)">
+  <div class="mock">
+    <aside><i></i><i class="on"></i><i></i><i></i></aside>
+    <main>
+      <div class="panel"><b>Revenue</b><strong>$42,180</strong><div class="chips"><span style="background:#4C74FC" title="#4C74FC"></span><span style="background:#FCA44C" title="#FCA44C"></span><span style="background:#FC8CA4" title="#FC8CA4"></span><span style="background:#8CA4FC" title="#8CA4FC"></span><span style="background:#2FB67C" title="#2FB67C"></span><span style="background:#BCCCFC" title="#BCCCFC"></span><span style="background:#FCDCB4" title="#FCDCB4"></span><span style="background:#A78BFA" title="#A78BFA"></span></div></div>
+      <div class="row"><button class="hot">Primary</button><button>Secondary</button></div>
+    </main>
+  </div>
+  <h2>Rome</h2>
+  <p>airy light dashboard: periwinkle blue, peach and pink accents, soft tinted shadows</p>
+  <small>Dashboard &middot; light &middot; <a href="https://www.setproduct.com/templates/rome">kit</a></small>
+</article>
+<article class="card" style="--sp-font: &quot;Nunito Sans&quot;, system-ui, -apple-system, &quot;Segoe UI&quot;, Roboto, sans-serif; --sp-font-heading: &quot;Nunito Sans&quot;, system-ui, -apple-system, &quot;Segoe UI&quot;, Roboto, sans-serif; --sp-primary: #047CFC; --sp-primary-contrast: #FFFFFF; --sp-primary-shade: color-mix(in srgb, var(--sp-primary) 14%, transparent); --sp-accent: #FC8C34; --sp-accent-contrast: #FFFFFF; --sp-accent-shade: color-mix(in srgb, var(--sp-accent) 16%, transparent); --sp-success: #22B07D; --sp-warning: #FC8C34; --sp-danger: #F0445A; --sp-info: #9C54E4; --sp-bg: #F4F4F4; --sp-surface: #FFFFFF; --sp-surface-2: #FAFAFA; --sp-border: #E4E4E4; --sp-text: #1F2430; --sp-text-muted: #6F7787; --sp-highlight: #E6F2FF; --sp-field-bg: var(--sp-surface); --sp-field-border: var(--sp-border); --sp-header-bg: var(--sp-surface); --sp-header-text: var(--sp-text); --sp-nav-bg: #FFFFFF; --sp-nav-text: #4A5263; --sp-nav-hover-bg: color-mix(in srgb, var(--sp-nav-active-text) 8%, transparent); --sp-nav-active-bg: #E6F2FF; --sp-nav-active-text: #047CFC; --sp-nav-item-radius: 8px; --sp-nav-item-inset: 8px; --sp-radius-sm: 4px; --sp-radius-md: 8px; --sp-radius-lg: 8px; --sp-radius-pill: 999px; --sp-btn-radius: 8px; --sp-field-radius: 8px; --sp-shadow-sm: none; --sp-shadow-md: 0 1px 2px rgba(0,0,0,.08); --sp-shadow-lg: 0 8px 24px rgba(0,0,0,.12)">
+  <div class="mock">
+    <aside><i></i><i class="on"></i><i></i><i></i></aside>
+    <main>
+      <div class="panel"><b>Revenue</b><strong>$42,180</strong><div class="chips"><span style="background:#047CFC" title="#047CFC"></span><span style="background:#FC8C34" title="#FC8C34"></span><span style="background:#9C54E4" title="#9C54E4"></span><span style="background:#4CA4FC" title="#4CA4FC"></span><span style="background:#22B07D" title="#22B07D"></span><span style="background:#94C4FC" title="#94C4FC"></span><span style="background:#F0445A" title="#F0445A"></span><span style="background:#FFC542" title="#FFC542"></span></div></div>
+      <div class="row"><button class="hot">Primary</button><button>Secondary</button></div>
+    </main>
+  </div>
+  <h2>Neolex</h2>
+  <p>8dp-grid responsive dashboard: bright azure, orange and purple accents, crisp light greys</p>
+  <small>Dashboard &middot; light, dark &middot; <a href="https://www.setproduct.com/templates/neolex-dashboard">kit</a></small>
+</article>
+<article class="card" style="--sp-font: &quot;Inter&quot;, system-ui, -apple-system, &quot;Segoe UI&quot;, Roboto, sans-serif; --sp-font-heading: &quot;Inter&quot;, system-ui, -apple-system, &quot;Segoe UI&quot;, Roboto, sans-serif; --sp-primary: #2D72D2; --sp-primary-contrast: #FFFFFF; --sp-primary-shade: color-mix(in srgb, var(--sp-primary) 14%, transparent); --sp-accent: #7961DB; --sp-accent-contrast: #FFFFFF; --sp-accent-shade: color-mix(in srgb, var(--sp-accent) 16%, transparent); --sp-success: #238551; --sp-warning: #C87619; --sp-danger: #CD4246; --sp-info: #2D72D2; --sp-bg: #F6F7F9; --sp-surface: #FFFFFF; --sp-surface-2: #F6F7F9; --sp-border: #DCE0E5; --sp-text: #1C2127; --sp-text-muted: #5F6B7C; --sp-highlight: rgba(45,114,210,.1); --sp-field-bg: var(--sp-surface); --sp-field-border: var(--sp-border); --sp-header-bg: var(--sp-surface); --sp-header-text: var(--sp-text); --sp-nav-bg: #FFFFFF; --sp-nav-text: #404854; --sp-nav-hover-bg: color-mix(in srgb, var(--sp-nav-active-text) 8%, transparent); --sp-nav-active-bg: rgba(45,114,210,.12); --sp-nav-active-text: #215DB0; --sp-nav-item-radius: 3px; --sp-radius-sm: 2px; --sp-radius-md: 3px; --sp-radius-lg: 4px; --sp-radius-pill: 999px; --sp-btn-radius: 3px; --sp-field-radius: 3px; --sp-btn-padding-y: .3125rem; --sp-btn-padding-x: .625rem; --sp-btn-font-size: .8125rem; --sp-btn-weight: 500; --sp-shadow-sm: none; --sp-shadow-md: 0 1px 2px rgba(0,0,0,.08); --sp-shadow-lg: 0 8px 24px rgba(0,0,0,.12)">
+  <div class="mock">
+    <aside><i></i><i class="on"></i><i></i><i></i></aside>
+    <main>
+      <div class="panel"><b>Revenue</b><strong>$42,180</strong><div class="chips"><span style="background:#2D72D2" title="#2D72D2"></span><span style="background:#238551" title="#238551"></span><span style="background:#C87619" title="#C87619"></span><span style="background:#CD4246" title="#CD4246"></span><span style="background:#7961DB" title="#7961DB"></span><span style="background:#147EB3" title="#147EB3"></span><span style="background:#D1980B" title="#D1980B"></span><span style="background:#D13913" title="#D13913"></span></div></div>
+      <div class="row"><button class="hot">Primary</button><button>Secondary</button></div>
+    </main>
+  </div>
+  <h2>React UI kit (Blueprint)</h2>
+  <p>data-dense Blueprint.js-style desktop UI: tight spacing, 3px radii, inset borders</p>
+  <small>Dashboard &middot; light, dark &middot; <a href="https://www.setproduct.com/templates/react-ui-kit">kit</a></small>
+</article>
+<article class="card" style="--sp-font: &quot;Inter&quot;, system-ui, -apple-system, &quot;Segoe UI&quot;, Roboto, sans-serif; --sp-font-heading: &quot;Inter&quot;, system-ui, -apple-system, &quot;Segoe UI&quot;, Roboto, sans-serif; --sp-primary: #3464FC; --sp-primary-contrast: #FFFFFF; --sp-primary-shade: color-mix(in srgb, var(--sp-primary) 14%, transparent); --sp-accent: #FC9C6C; --sp-accent-contrast: #FFFFFF; --sp-accent-shade: color-mix(in srgb, var(--sp-accent) 16%, transparent); --sp-success: #1DB98A; --sp-warning: #FFB020; --sp-danger: #F0445A; --sp-info: #043CEC; --sp-bg: #F4F6FB; --sp-surface: #FFFFFF; --sp-surface-2: #F8FAFE; --sp-border: #E5E9F2; --sp-text: #0E1A3B; --sp-text-muted: #6B7593; --sp-highlight: #EBF0FF; --sp-field-bg: var(--sp-surface); --sp-field-border: var(--sp-border); --sp-header-bg: var(--sp-surface); --sp-header-text: var(--sp-text); --sp-nav-bg: #FFFFFF; --sp-nav-text: #4A5578; --sp-nav-hover-bg: color-mix(in srgb, var(--sp-nav-active-text) 8%, transparent); --sp-nav-active-bg: #EBF0FF; --sp-nav-active-text: #3464FC; --sp-nav-item-radius: 10px; --sp-nav-item-inset: 10px; --sp-radius-sm: 6px; --sp-radius-md: 10px; --sp-radius-lg: 16px; --sp-radius-pill: 999px; --sp-btn-radius: 10px; --sp-field-radius: 10px; --sp-shadow-sm: 0 1px 2px rgba(16,24,40,.05), 0 1px 3px rgba(16,24,40,.07); --sp-shadow-md: 0 4px 12px rgba(16,24,40,.08); --sp-shadow-lg: 0 16px 40px rgba(16,24,40,.12)">
+  <div class="mock">
+    <aside><i></i><i class="on"></i><i></i><i></i></aside>
+    <main>
+      <div class="panel"><b>Revenue</b><strong>$42,180</strong><div class="chips"><span style="background:#3464FC" title="#3464FC"></span><span style="background:#FC9C6C" title="#FC9C6C"></span><span style="background:#1DB98A" title="#1DB98A"></span><span style="background:#94ACFC" title="#94ACFC"></span><span style="background:#FFB020" title="#FFB020"></span><span style="background:#F0445A" title="#F0445A"></span><span style="background:#5C84FC" title="#5C84FC"></span><span style="background:#C4D4FC" title="#C4D4FC"></span></div></div>
+      <div class="row"><button class="hot">Primary</button><button>Secondary</button></div>
+    </main>
+  </div>
+  <h2>Xela</h2>
+  <p>cross-platform (React/Swift/Android/Flutter) system: royal blue, crisp white, easy dark toggle</p>
+  <small>Dashboard &middot; light, dark &middot; <a href="https://www.setproduct.com/templates/xela-react">kit</a></small>
+</article>
+<article class="card" style="--sp-font: &quot;Readex Pro&quot;, system-ui, -apple-system, &quot;Segoe UI&quot;, Roboto, sans-serif; --sp-font-heading: &quot;Readex Pro&quot;, system-ui, -apple-system, &quot;Segoe UI&quot;, Roboto, sans-serif; --sp-primary: #3B82F6; --sp-primary-contrast: #FFFFFF; --sp-primary-shade: color-mix(in srgb, var(--sp-primary) 14%, transparent); --sp-accent: #4F46E5; --sp-accent-contrast: #FFFFFF; --sp-accent-shade: color-mix(in srgb, var(--sp-accent) 16%, transparent); --sp-success: #22C55E; --sp-warning: #F59E0B; --sp-danger: #EF4444; --sp-info: #0EA5E9; --sp-bg: #F8FAFF; --sp-surface: #FFFFFF; --sp-surface-2: #EEF4FE; --sp-border: #E2E8F0; --sp-text: #0F172A; --sp-text-muted: #64748B; --sp-highlight: #E0ECFF; --sp-field-bg: #EEF4FE; --sp-field-border: transparent; --sp-header-bg: #F8FAFF; --sp-header-text: var(--sp-text); --sp-nav-bg: #EEF4FE; --sp-nav-text: #334155; --sp-nav-border: transparent; --sp-nav-hover-bg: color-mix(in srgb, var(--sp-nav-active-text) 8%, transparent); --sp-nav-active-bg: #D3E3FD; --sp-nav-active-text: #0F172A; --sp-nav-item-radius: 999px; --sp-nav-item-inset: 12px; --sp-radius-sm: 8px; --sp-radius-md: 12px; --sp-radius-lg: 16px; --sp-radius-pill: 999px; --sp-btn-radius: 999px; --sp-field-radius: 12px; --sp-btn-padding-y: .625rem; --sp-btn-padding-x: 1.5rem; --sp-weight-semibold: 500; --sp-shadow-sm: none; --sp-shadow-md: 0 1px 2px rgba(0,0,0,.08); --sp-shadow-lg: 0 8px 24px rgba(0,0,0,.12)">
+  <div class="mock">
+    <aside><i></i><i class="on"></i><i></i><i></i></aside>
+    <main>
+      <div class="panel"><b>Revenue</b><strong>$42,180</strong><div class="chips"><span style="background:#3B82F6" title="#3B82F6"></span><span style="background:#4F46E5" title="#4F46E5"></span><span style="background:#22C55E" title="#22C55E"></span><span style="background:#F59E0B" title="#F59E0B"></span><span style="background:#EF4444" title="#EF4444"></span><span style="background:#0EA5E9" title="#0EA5E9"></span><span style="background:#A855F7" title="#A855F7"></span><span style="background:#14B8A6" title="#14B8A6"></span></div></div>
+      <div class="row"><button class="hot">Primary</button><button>Secondary</button></div>
+    </main>
+  </div>
+  <h2>Material You</h2>
+  <p>Material Design 3 with Tailwind palette and Readex Pro: tonal surfaces, pill buttons</p>
+  <small>Material &middot; light, dark &middot; <a href="https://www.setproduct.com/templates/material-you">kit</a></small>
+</article>
+<article class="card" style="--sp-font: &quot;Manrope&quot;, system-ui, -apple-system, &quot;Segoe UI&quot;, Roboto, sans-serif; --sp-font-heading: &quot;Manrope&quot;, system-ui, -apple-system, &quot;Segoe UI&quot;, Roboto, sans-serif; --sp-primary: #24348C; --sp-primary-contrast: #FFFFFF; --sp-primary-shade: color-mix(in srgb, var(--sp-primary) 14%, transparent); --sp-accent: #5CC4B4; --sp-accent-contrast: #FFFFFF; --sp-accent-shade: color-mix(in srgb, var(--sp-accent) 16%, transparent); --sp-success: #248C24; --sp-warning: #F2A93B; --sp-danger: #D6455D; --sp-info: #5464A4; --sp-bg: #F7F8FC; --sp-surface: #FFFFFF; --sp-surface-2: #F2F4FA; --sp-border: #E3E6F0; --sp-text: #141A33; --sp-text-muted: #626A86; --sp-highlight: #E8EBF7; --sp-field-bg: var(--sp-surface); --sp-field-border: var(--sp-border); --sp-header-bg: var(--sp-surface); --sp-header-text: var(--sp-text); --sp-nav-bg: #FFFFFF; --sp-nav-text: #3D4466; --sp-nav-hover-bg: color-mix(in srgb, var(--sp-nav-active-text) 8%, transparent); --sp-nav-active-bg: #DDE3FA; --sp-nav-active-text: #24348C; --sp-nav-item-radius: 999px; --sp-nav-item-inset: 12px; --sp-radius-sm: 8px; --sp-radius-md: 12px; --sp-radius-lg: 20px; --sp-radius-pill: 999px; --sp-btn-radius: 12px; --sp-field-radius: 12px; --sp-weight-semibold: 700; --sp-shadow-sm: 0 1px 2px rgba(16,24,40,.05), 0 1px 3px rgba(16,24,40,.07); --sp-shadow-md: 0 4px 12px rgba(16,24,40,.08); --sp-shadow-lg: 0 16px 40px rgba(16,24,40,.12)">
+  <div class="mock">
+    <aside><i></i><i class="on"></i><i></i><i></i></aside>
+    <main>
+      <div class="panel"><b>Revenue</b><strong>$42,180</strong><div class="chips"><span style="background:#24348C" title="#24348C"></span><span style="background:#5CC4B4" title="#5CC4B4"></span><span style="background:#5464A4" title="#5464A4"></span><span style="background:#9CDCD4" title="#9CDCD4"></span><span style="background:#F2A93B" title="#F2A93B"></span><span style="background:#D6455D" title="#D6455D"></span><span style="background:#248C24" title="#248C24"></span><span style="background:#ACFCF4" title="#ACFCF4"></span></div></div>
+      <div class="row"><button class="hot">Primary</button><button>Secondary</button></div>
+    </main>
+  </div>
+  <h2>Material X</h2>
+  <p>Material beyond Material: Manrope type, deep indigo + teal, top-notch rounded shapes</p>
+  <small>Material &middot; light &middot; <a href="https://www.setproduct.com/templates/material-x">kit</a></small>
+</article>
+<article class="card" style="--sp-font: &quot;Roboto&quot;, system-ui, -apple-system, &quot;Segoe UI&quot;, Roboto, sans-serif; --sp-font-heading: &quot;Red Hat Display&quot;, system-ui, -apple-system, &quot;Segoe UI&quot;, Roboto, sans-serif; --sp-primary: #3D7FF0; --sp-primary-contrast: #FFFFFF; --sp-primary-shade: color-mix(in srgb, var(--sp-primary) 14%, transparent); --sp-accent: #FC7C2C; --sp-accent-contrast: #FFFFFF; --sp-accent-shade: color-mix(in srgb, var(--sp-accent) 16%, transparent); --sp-success: #34A853; --sp-warning: #FBBC05; --sp-danger: #EA4335; --sp-info: #3D7FF0; --sp-bg: #F5F5F5; --sp-surface: #FFFFFF; --sp-surface-2: #FAFAFA; --sp-border: #E0E0E0; --sp-text: #212121; --sp-text-muted: #757575; --sp-highlight: color-mix(in srgb, var(--sp-primary) 10%, var(--sp-surface)); --sp-field-bg: var(--sp-surface); --sp-field-border: var(--sp-border); --sp-header-bg: #3D7FF0; --sp-header-text: #FFFFFF; --sp-header-shadow: 0 2px 4px rgba(0,0,0,.2); --sp-nav-bg: #FFFFFF; --sp-nav-text: #424242; --sp-nav-hover-bg: color-mix(in srgb, var(--sp-nav-active-text) 8%, transparent); --sp-nav-active-bg: rgba(61,127,240,.12); --sp-nav-active-text: #3D7FF0; --sp-nav-item-radius: 0 999px 999px 0; --sp-radius-sm: 4px; --sp-radius-md: 4px; --sp-radius-lg: 8px; --sp-radius-pill: 999px; --sp-btn-radius: 4px; --sp-field-radius: 4px; --sp-btn-weight: 500; --sp-btn-transform: uppercase; --sp-weight-semibold: 500; --sp-heading-tracking: 0; --sp-shadow-sm: 0 1px 3px rgba(0,0,0,.12), 0 1px 2px rgba(0,0,0,.24); --sp-shadow-md: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(0,0,0,.23); --sp-shadow-lg: 0 10px 20px rgba(0,0,0,.19), 0 6px 6px rgba(0,0,0,.23)">
+  <div class="mock">
+    <aside><i></i><i class="on"></i><i></i><i></i></aside>
+    <main>
+      <div class="panel"><b>Revenue</b><strong>$42,180</strong><div class="chips"><span style="background:#3D7FF0" title="#3D7FF0"></span><span style="background:#EA4335" title="#EA4335"></span><span style="background:#FBBC05" title="#FBBC05"></span><span style="background:#34A853" title="#34A853"></span><span style="background:#FC7C2C" title="#FC7C2C"></span><span style="background:#AB47BC" title="#AB47BC"></span><span style="background:#00ACC1" title="#00ACC1"></span><span style="background:#94B4EC" title="#94B4EC"></span></div></div>
+      <div class="row"><button class="hot">Primary</button><button>Secondary</button></div>
+    </main>
+  </div>
+  <h2>Material Design System</h2>
+  <p>classic Material Design (material.io): Roboto + Red Hat Display, elevation shadows, 4px radii</p>
+  <small>Material &middot; light, dark &middot; <a href="https://www.setproduct.com/templates/material">kit</a></small>
+</article>
+<article class="card" style="--sp-font: &quot;Geist&quot;, system-ui, -apple-system, &quot;Segoe UI&quot;, Roboto, sans-serif; --sp-font-heading: &quot;Geist&quot;, system-ui, -apple-system, &quot;Segoe UI&quot;, Roboto, sans-serif; --sp-primary: #CCFCBC; --sp-primary-contrast: #0C0C44; --sp-primary-shade: color-mix(in srgb, var(--sp-primary) 14%, transparent); --sp-accent: #CCFCBC; --sp-accent-contrast: #0C0C44; --sp-accent-shade: color-mix(in srgb, var(--sp-accent) 16%, transparent); --sp-success: #2ECC8F; --sp-warning: #F5B544; --sp-danger: #F40C04; --sp-info: #C4DCFC; --sp-bg: #07071F; --sp-surface: #0F0F33; --sp-surface-2: #16163F; --sp-border: #24245A; --sp-text: #F2F2FF; --sp-text-muted: #9B9BC9; --sp-highlight: rgba(204,252,188,.08); --sp-field-bg: #16163F; --sp-field-border: #2B2B66; --sp-header-bg: #07071F; --sp-header-text: var(--sp-text); --sp-nav-bg: #0A0A26; --sp-nav-text: #B9B9DD; --sp-nav-hover-bg: color-mix(in srgb, var(--sp-nav-active-text) 8%, transparent); --sp-nav-active-bg: rgba(204,252,188,.12); --sp-nav-active-text: #CCFCBC; --sp-nav-item-radius: 10px; --sp-nav-item-inset: 10px; --sp-radius-sm: 8px; --sp-radius-md: 12px; --sp-radius-lg: 20px; --sp-radius-pill: 999px; --sp-btn-radius: 12px; --sp-field-radius: 16px; --sp-shadow-sm: 0 0 0 1px rgba(255,255,255,.03); --sp-shadow-md: 0 8px 24px rgba(0,0,0,.45); --sp-shadow-lg: 0 24px 60px rgba(0,0,0,.55), 0 0 48px color-mix(in srgb, var(--sp-primary) 18%, transparent)">
+  <div class="mock">
+    <aside><i></i><i class="on"></i><i></i><i></i></aside>
+    <main>
+      <div class="panel"><b>Revenue</b><strong>$42,180</strong><div class="chips"><span style="background:#CCFCBC" title="#CCFCBC"></span><span style="background:#C4DCFC" title="#C4DCFC"></span><span style="background:#8E8EFF" title="#8E8EFF"></span><span style="background:#2ECC8F" title="#2ECC8F"></span><span style="background:#F5B544" title="#F5B544"></span><span style="background:#FF7A7A" title="#FF7A7A"></span><span style="background:#5EEAD4" title="#5EEAD4"></span><span style="background:#E9D5FF" title="#E9D5FF"></span></div></div>
+      <div class="row"><button class="hot">Primary</button><button>Secondary</button></div>
+    </main>
+  </div>
+  <h2>Nocra</h2>
+  <p>AI-product design system: deep midnight navy, mint CTAs, prompt inputs, thinking-state motion</p>
+  <small>AI product &middot; dark, light &middot; <a href="https://www.setproduct.com/templates/nocra">kit</a></small>
+</article>
+<article class="card" style="--sp-font: &quot;Inter&quot;, system-ui, -apple-system, &quot;Segoe UI&quot;, Roboto, sans-serif; --sp-font-heading: &quot;Space Grotesk&quot;, system-ui, -apple-system, &quot;Segoe UI&quot;, Roboto, sans-serif; --sp-primary: #8474FC; --sp-primary-contrast: #FFFFFF; --sp-primary-shade: color-mix(in srgb, var(--sp-primary) 14%, transparent); --sp-accent: #04F4E4; --sp-accent-contrast: #05051A; --sp-accent-shade: color-mix(in srgb, var(--sp-accent) 16%, transparent); --sp-success: #2EE6A8; --sp-warning: #FFB547; --sp-danger: #FF4D8D; --sp-info: #043CFC; --sp-bg: #05051A; --sp-surface: #0E0E2A; --sp-surface-2: #16163A; --sp-border: #23234D; --sp-text: #F2F2FF; --sp-text-muted: #8D8DB8; --sp-highlight: color-mix(in srgb, var(--sp-primary) 10%, var(--sp-surface)); --sp-field-bg: var(--sp-surface); --sp-field-border: var(--sp-border); --sp-header-bg: #05051A; --sp-header-text: var(--sp-text); --sp-nav-bg: #08081F; --sp-nav-text: #B5B5DA; --sp-nav-hover-bg: color-mix(in srgb, var(--sp-nav-active-text) 8%, transparent); --sp-nav-active-bg: rgba(132,116,252,.2); --sp-nav-active-text: #FFFFFF; --sp-nav-item-radius: 10px; --sp-nav-item-inset: 8px; --sp-radius-sm: 6px; --sp-radius-md: 10px; --sp-radius-lg: 16px; --sp-radius-pill: 999px; --sp-btn-radius: 10px; --sp-field-radius: 10px; --sp-shadow-sm: 0 0 0 1px rgba(255,255,255,.03); --sp-shadow-md: 0 8px 24px rgba(0,0,0,.45); --sp-shadow-lg: 0 24px 60px rgba(0,0,0,.55), 0 0 48px color-mix(in srgb, var(--sp-primary) 18%, transparent)">
+  <div class="mock">
+    <aside><i></i><i class="on"></i><i></i><i></i></aside>
+    <main>
+      <div class="panel"><b>Revenue</b><strong>$42,180</strong><div class="chips"><span style="background:#8474FC" title="#8474FC"></span><span style="background:#04F4E4" title="#04F4E4"></span><span style="background:#043CFC" title="#043CFC"></span><span style="background:#FF4D8D" title="#FF4D8D"></span><span style="background:#FFB547" title="#FFB547"></span><span style="background:#2EE6A8" title="#2EE6A8"></span><span style="background:#BCB4FC" title="#BCB4FC"></span><span style="background:#5B8CFF" title="#5B8CFF"></span></div></div>
+      <div class="row"><button class="hot">Primary</button><button>Secondary</button></div>
+    </main>
+  </div>
+  <h2>Orion</h2>
+  <p>space-themed dataviz: deep indigo night, neon violet/cyan, glowing maps, hexagons and bubbles</p>
+  <small>Data visualization &middot; dark, light &middot; <a href="https://www.setproduct.com/templates/orion">kit</a></small>
+</article>
+<article class="card" style="--sp-font: &quot;Inter&quot;, system-ui, -apple-system, &quot;Segoe UI&quot;, Roboto, sans-serif; --sp-font-heading: &quot;Inter&quot;, system-ui, -apple-system, &quot;Segoe UI&quot;, Roboto, sans-serif; --sp-primary: #845CF4; --sp-primary-contrast: #FFFFFF; --sp-primary-shade: color-mix(in srgb, var(--sp-primary) 14%, transparent); --sp-accent: #54A4FC; --sp-accent-contrast: #FFFFFF; --sp-accent-shade: color-mix(in srgb, var(--sp-accent) 16%, transparent); --sp-success: #1CD4A4; --sp-warning: #FCBC7C; --sp-danger: #F87171; --sp-info: #54A4FC; --sp-bg: #F7F7FC; --sp-surface: #FFFFFF; --sp-surface-2: #FAFAFE; --sp-border: #ECECF4; --sp-text: #2C2C34; --sp-text-muted: #7C7C8A; --sp-highlight: color-mix(in srgb, var(--sp-primary) 10%, var(--sp-surface)); --sp-field-bg: var(--sp-surface); --sp-field-border: var(--sp-border); --sp-header-bg: var(--sp-surface); --sp-header-text: var(--sp-text); --sp-nav-bg: #FFFFFF; --sp-nav-text: #4A4A57; --sp-nav-hover-bg: color-mix(in srgb, var(--sp-nav-active-text) 8%, transparent); --sp-nav-active-bg: #F1ECFE; --sp-nav-active-text: #845CF4; --sp-nav-item-radius: 8px; --sp-nav-item-inset: 8px; --sp-radius-sm: 6px; --sp-radius-md: 8px; --sp-radius-lg: 12px; --sp-radius-pill: 999px; --sp-btn-radius: 8px; --sp-field-radius: 8px; --sp-shadow-sm: 0 1px 2px rgba(16,24,40,.05), 0 1px 3px rgba(16,24,40,.07); --sp-shadow-md: 0 4px 12px rgba(16,24,40,.08); --sp-shadow-lg: 0 16px 40px rgba(16,24,40,.12)">
+  <div class="mock">
+    <aside><i></i><i class="on"></i><i></i><i></i></aside>
+    <main>
+      <div class="panel"><b>Revenue</b><strong>$42,180</strong><div class="chips"><span style="background:#845CF4" title="#845CF4"></span><span style="background:#54A4FC" title="#54A4FC"></span><span style="background:#1CD4A4" title="#1CD4A4"></span><span style="background:#FCBC7C" title="#FCBC7C"></span><span style="background:#F87171" title="#F87171"></span><span style="background:#CCBCFC" title="#CCBCFC"></span><span style="background:#BCF4E4" title="#BCF4E4"></span><span style="background:#FACC15" title="#FACC15"></span></div></div>
+      <div class="row"><button class="hot">Primary</button><button>Secondary</button></div>
+    </main>
+  </div>
+  <h2>Figma Charts</h2>
+  <p>component-driven chart library: pastel-bright violet/blue/mint/peach series on clean white cards</p>
+  <small>Data visualization &middot; light, dark &middot; <a href="https://www.setproduct.com/templates/charts">kit</a></small>
+</article>
+<article class="card" style="--sp-font: &quot;Outfit&quot;, system-ui, -apple-system, &quot;Segoe UI&quot;, Roboto, sans-serif; --sp-font-heading: &quot;Outfit&quot;, system-ui, -apple-system, &quot;Segoe UI&quot;, Roboto, sans-serif; --sp-primary: #6C74E4; --sp-primary-contrast: #FFFFFF; --sp-primary-shade: color-mix(in srgb, var(--sp-primary) 14%, transparent); --sp-accent: #4CDC6C; --sp-accent-contrast: #FFFFFF; --sp-accent-shade: color-mix(in srgb, var(--sp-accent) 16%, transparent); --sp-success: #4CDC6C; --sp-warning: #FFB86B; --sp-danger: #FC6C6C; --sp-info: #5CD4FC; --sp-bg: #F6F5FF; --sp-surface: #FFFFFF; --sp-surface-2: #F8F7FF; --sp-border: #E9E7FA; --sp-text: #1E1F3A; --sp-text-muted: #727497; --sp-highlight: color-mix(in srgb, var(--sp-primary) 10%, var(--sp-surface)); --sp-field-bg: var(--sp-surface); --sp-field-border: var(--sp-border); --sp-header-bg: var(--sp-surface); --sp-header-text: var(--sp-text); --sp-nav-bg: #FFFFFF; --sp-nav-text: #46486E; --sp-nav-hover-bg: color-mix(in srgb, var(--sp-nav-active-text) 8%, transparent); --sp-nav-active-bg: #ECEDFC; --sp-nav-active-text: #6C74E4; --sp-nav-item-radius: 12px; --sp-nav-item-inset: 10px; --sp-radius-sm: 8px; --sp-radius-md: 12px; --sp-radius-lg: 20px; --sp-radius-pill: 999px; --sp-btn-radius: 12px; --sp-field-radius: 12px; --sp-shadow-sm: 0 2px 8px color-mix(in srgb, var(--sp-primary) 8%, transparent); --sp-shadow-md: 0 8px 24px color-mix(in srgb, var(--sp-primary) 12%, transparent); --sp-shadow-lg: 0 24px 48px color-mix(in srgb, var(--sp-primary) 16%, transparent)">
+  <div class="mock">
+    <aside><i></i><i class="on"></i><i></i><i></i></aside>
+    <main>
+      <div class="panel"><b>Revenue</b><strong>$42,180</strong><div class="chips"><span style="background:#6C74E4" title="#6C74E4"></span><span style="background:#4CDC6C" title="#4CDC6C"></span><span style="background:#5CD4FC" title="#5CD4FC"></span><span style="background:#DCC4FC" title="#DCC4FC"></span><span style="background:#FFB86B" title="#FFB86B"></span><span style="background:#FC6C6C" title="#FC6C6C"></span><span style="background:#ACB4F4" title="#ACB4F4"></span><span style="background:#FCECC4" title="#FCECC4"></span></div></div>
+      <div class="row"><button class="hot">Primary</button><button>Secondary</button></div>
+    </main>
+  </div>
+  <h2>Hyper Charts</h2>
+  <p>1000+ chart blocks: indigo and fresh green on lavender-tinted cards, rounded and airy</p>
+  <small>Data visualization &middot; light, dark &middot; <a href="https://www.setproduct.com/templates/hyper-charts">kit</a></small>
+</article>
+<article class="card" style="--sp-font: &quot;Poppins&quot;, system-ui, -apple-system, &quot;Segoe UI&quot;, Roboto, sans-serif; --sp-font-heading: &quot;Poppins&quot;, system-ui, -apple-system, &quot;Segoe UI&quot;, Roboto, sans-serif; --sp-primary: #7454FC; --sp-primary-contrast: #FFFFFF; --sp-primary-shade: color-mix(in srgb, var(--sp-primary) 14%, transparent); --sp-accent: #FCDC4C; --sp-accent-contrast: #1A1433; --sp-accent-shade: color-mix(in srgb, var(--sp-accent) 16%, transparent); --sp-success: #22C55E; --sp-warning: #FCDC4C; --sp-danger: #F43F5E; --sp-info: #2414AC; --sp-bg: #F7F6FF; --sp-surface: #FFFFFF; --sp-surface-2: #F4F2FF; --sp-border: #ECE9FB; --sp-text: #1A1433; --sp-text-muted: #7B7596; --sp-highlight: color-mix(in srgb, var(--sp-primary) 10%, var(--sp-surface)); --sp-field-bg: var(--sp-surface); --sp-field-border: var(--sp-border); --sp-header-bg: var(--sp-surface); --sp-header-text: var(--sp-text); --sp-nav-bg: #FFFFFF; --sp-nav-text: #4B4566; --sp-nav-hover-bg: color-mix(in srgb, var(--sp-nav-active-text) 8%, transparent); --sp-nav-active-bg: #EFEAFF; --sp-nav-active-text: #7454FC; --sp-nav-item-radius: 14px; --sp-nav-item-inset: 10px; --sp-radius-sm: 10px; --sp-radius-md: 14px; --sp-radius-lg: 22px; --sp-radius-pill: 999px; --sp-btn-radius: 14px; --sp-field-radius: 14px; --sp-btn-padding-y: .75rem; --sp-btn-padding-x: 1.25rem; --sp-btn-font-size: .875rem; --sp-shadow-sm: 0 2px 8px color-mix(in srgb, var(--sp-primary) 8%, transparent); --sp-shadow-md: 0 8px 24px color-mix(in srgb, var(--sp-primary) 12%, transparent); --sp-shadow-lg: 0 24px 48px color-mix(in srgb, var(--sp-primary) 16%, transparent)">
+  <div class="mock">
+    <aside><i></i><i class="on"></i><i></i><i></i></aside>
+    <main>
+      <div class="panel"><b>Revenue</b><strong>$42,180</strong><div class="chips"><span style="background:#7454FC" title="#7454FC"></span><span style="background:#FCDC4C" title="#FCDC4C"></span><span style="background:#2414AC" title="#2414AC"></span><span style="background:#22C55E" title="#22C55E"></span><span style="background:#F43F5E" title="#F43F5E"></span><span style="background:#9CBCEC" title="#9CBCEC"></span><span style="background:#CCC4FC" title="#CCC4FC"></span><span style="background:#FB923C" title="#FB923C"></span></div></div>
+      <div class="row"><button class="hot">Primary</button><button>Secondary</button></div>
+    </main>
+  </div>
+  <h2>Nucleus UI</h2>
+  <p>1000+ component mobile system: vivid violet, sunshine-yellow highlights, rounded friendly UI</p>
+  <small>Mobile &middot; light, dark &middot; <a href="https://www.setproduct.com/templates/nucleus-ui">kit</a></small>
+</article>
+<article class="card" style="--sp-font: &quot;Inter&quot;, system-ui, -apple-system, &quot;Segoe UI&quot;, Roboto, sans-serif; --sp-font-heading: &quot;Inter&quot;, system-ui, -apple-system, &quot;Segoe UI&quot;, Roboto, sans-serif; --sp-primary: #4474FC; --sp-primary-contrast: #FFFFFF; --sp-primary-shade: color-mix(in srgb, var(--sp-primary) 14%, transparent); --sp-accent: #B4EC5C; --sp-accent-contrast: #1A2410; --sp-accent-shade: color-mix(in srgb, var(--sp-accent) 16%, transparent); --sp-success: #3DBE6B; --sp-warning: #FFB020; --sp-danger: #FF5C5C; --sp-info: #3454AC; --sp-bg: #F5F6FA; --sp-surface: #FFFFFF; --sp-surface-2: #F8F9FC; --sp-border: #E5E7EF; --sp-text: #121726; --sp-text-muted: #6A7186; --sp-highlight: color-mix(in srgb, var(--sp-primary) 10%, var(--sp-surface)); --sp-field-bg: var(--sp-surface); --sp-field-border: var(--sp-border); --sp-header-bg: var(--sp-surface); --sp-header-text: var(--sp-text); --sp-nav-bg: #FFFFFF; --sp-nav-text: #3F465A; --sp-nav-hover-bg: color-mix(in srgb, var(--sp-nav-active-text) 8%, transparent); --sp-nav-active-bg: #E8EEFF; --sp-nav-active-text: #4474FC; --sp-nav-item-radius: 10px; --sp-nav-item-inset: 8px; --sp-radius-sm: 6px; --sp-radius-md: 10px; --sp-radius-lg: 16px; --sp-radius-pill: 999px; --sp-btn-radius: 10px; --sp-field-radius: 10px; --sp-shadow-sm: 0 1px 2px rgba(16,24,40,.05), 0 1px 3px rgba(16,24,40,.07); --sp-shadow-md: 0 4px 12px rgba(16,24,40,.08); --sp-shadow-lg: 0 16px 40px rgba(16,24,40,.12)">
+  <div class="mock">
+    <aside><i></i><i class="on"></i><i></i><i></i></aside>
+    <main>
+      <div class="panel"><b>Revenue</b><strong>$42,180</strong><div class="chips"><span style="background:#4474FC" title="#4474FC"></span><span style="background:#B4EC5C" title="#B4EC5C"></span><span style="background:#FCC4C4" title="#FCC4C4"></span><span style="background:#3454AC" title="#3454AC"></span><span style="background:#8CACFC" title="#8CACFC"></span><span style="background:#FF5C5C" title="#FF5C5C"></span><span style="background:#FFB020" title="#FFB020"></span><span style="background:#24346C" title="#24346C"></span></div></div>
+      <div class="row"><button class="hot">Primary</button><button>Secondary</button></div>
+    </main>
+  </div>
+  <h2>Mobile X</h2>
+  <p>iOS/Android cross-platform kit: clear blue, lime highlight, 8dp grid, toggleable dark variants</p>
+  <small>Mobile &middot; light, dark &middot; <a href="https://www.setproduct.com/templates/mobile-x">kit</a></small>
+</article>
+<article class="card" style="--sp-font: -apple-system, BlinkMacSystemFont, &quot;SF Pro Text&quot;, Inter, system-ui, -apple-system, &quot;Segoe UI&quot;, Roboto, sans-serif; --sp-font-heading: -apple-system, BlinkMacSystemFont, &quot;SF Pro Display&quot;, Inter, system-ui, -apple-system, &quot;Segoe UI&quot;, Roboto, sans-serif; --sp-primary: #4444E4; --sp-primary-contrast: #FFFFFF; --sp-primary-shade: color-mix(in srgb, var(--sp-primary) 14%, transparent); --sp-accent: #FCC444; --sp-accent-contrast: #1C1C1E; --sp-accent-shade: color-mix(in srgb, var(--sp-accent) 16%, transparent); --sp-success: #34C759; --sp-warning: #FF9500; --sp-danger: #EC042C; --sp-info: #7474EC; --sp-bg: #F2F2F7; --sp-surface: #FFFFFF; --sp-surface-2: #F2F2F7; --sp-border: #E5E5EA; --sp-text: #000000; --sp-text-muted: #8E8E93; --sp-highlight: color-mix(in srgb, var(--sp-primary) 10%, var(--sp-surface)); --sp-field-bg: #FFFFFF; --sp-field-border: var(--sp-border); --sp-header-bg: rgba(249,249,249,.94); --sp-header-text: var(--sp-text); --sp-nav-bg: #F2F2F7; --sp-nav-text: #3C3C43; --sp-nav-hover-bg: color-mix(in srgb, var(--sp-nav-active-text) 8%, transparent); --sp-nav-active-bg: #FFFFFF; --sp-nav-active-text: #4444E4; --sp-nav-item-radius: 10px; --sp-nav-item-inset: 8px; --sp-radius-sm: 8px; --sp-radius-md: 10px; --sp-radius-lg: 14px; --sp-radius-pill: 999px; --sp-btn-radius: 12px; --sp-field-radius: 10px; --sp-border-width: 0px; --sp-shadow-sm: none; --sp-shadow-md: 0 1px 2px rgba(0,0,0,.08); --sp-shadow-lg: 0 8px 24px rgba(0,0,0,.12)">
+  <div class="mock">
+    <aside><i></i><i class="on"></i><i></i><i></i></aside>
+    <main>
+      <div class="panel"><b>Revenue</b><strong>$42,180</strong><div class="chips"><span style="background:#4444E4" title="#4444E4"></span><span style="background:#FCC444" title="#FCC444"></span><span style="background:#34C759" title="#34C759"></span><span style="background:#FF9500" title="#FF9500"></span><span style="background:#EC042C" title="#EC042C"></span><span style="background:#7474EC" title="#7474EC"></span><span style="background:#5AC8FA" title="#5AC8FA"></span><span style="background:#AF52DE" title="#AF52DE"></span></div></div>
+      <div class="row"><button class="hot">Primary</button><button>Secondary</button></div>
+    </main>
+  </div>
+  <h2>Appka iOS</h2>
+  <p>Apple-spec iOS system: grouped inset lists, SF-style type, system blue-violet, true-black dark</p>
+  <small>Mobile &middot; light, dark &middot; <a href="https://www.setproduct.com/templates/appka-ios-ui-kit">kit</a></small>
+</article>
+<article class="card" style="--sp-font: &quot;Roboto&quot;, system-ui, -apple-system, &quot;Segoe UI&quot;, Roboto, sans-serif; --sp-font-heading: &quot;Roboto&quot;, system-ui, -apple-system, &quot;Segoe UI&quot;, Roboto, sans-serif; --sp-primary: #546CFC; --sp-primary-contrast: #FFFFFF; --sp-primary-shade: color-mix(in srgb, var(--sp-primary) 14%, transparent); --sp-accent: #FC9C04; --sp-accent-contrast: #FFFFFF; --sp-accent-shade: color-mix(in srgb, var(--sp-accent) 16%, transparent); --sp-success: #2EB872; --sp-warning: #FC9C04; --sp-danger: #F0445A; --sp-info: #2C7CEC; --sp-bg: #F7F8FC; --sp-surface: #FFFFFF; --sp-surface-2: #F4F6FB; --sp-border: #E3E6EF; --sp-text: #1A1D29; --sp-text-muted: #6B7083; --sp-highlight: color-mix(in srgb, var(--sp-primary) 10%, var(--sp-surface)); --sp-field-bg: var(--sp-surface); --sp-field-border: var(--sp-border); --sp-header-bg: var(--sp-surface); --sp-header-text: var(--sp-text); --sp-nav-bg: #FFFFFF; --sp-nav-text: #3D4256; --sp-nav-hover-bg: color-mix(in srgb, var(--sp-nav-active-text) 8%, transparent); --sp-nav-active-bg: #ECEFFF; --sp-nav-active-text: #546CFC; --sp-nav-item-radius: 8px; --sp-nav-item-inset: 8px; --sp-radius-sm: 4px; --sp-radius-md: 8px; --sp-radius-lg: 12px; --sp-radius-pill: 999px; --sp-btn-radius: 8px; --sp-field-radius: 8px; --sp-weight-semibold: 500; --sp-shadow-sm: 0 1px 3px rgba(0,0,0,.12), 0 1px 2px rgba(0,0,0,.24); --sp-shadow-md: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(0,0,0,.23); --sp-shadow-lg: 0 10px 20px rgba(0,0,0,.19), 0 6px 6px rgba(0,0,0,.23)">
+  <div class="mock">
+    <aside><i></i><i class="on"></i><i></i><i></i></aside>
+    <main>
+      <div class="panel"><b>Revenue</b><strong>$42,180</strong><div class="chips"><span style="background:#546CFC" title="#546CFC"></span><span style="background:#FC9C04" title="#FC9C04"></span><span style="background:#2C7CEC" title="#2C7CEC"></span><span style="background:#74B4DC" title="#74B4DC"></span><span style="background:#2EB872" title="#2EB872"></span><span style="background:#F0445A" title="#F0445A"></span><span style="background:#A4CCFC" title="#A4CCFC"></span><span style="background:#FCECC4" title="#FCECC4"></span></div></div>
+      <div class="row"><button class="hot">Primary</button><button>Secondary</button></div>
+    </main>
+  </div>
+  <h2>Android UI kit</h2>
+  <p>Android app templates: indigo-blue, amber accents, Roboto, elevation cards</p>
+  <small>Mobile &middot; light &middot; <a href="https://www.setproduct.com/templates/android-ui-kit">kit</a></small>
+</article>
+<article class="card" style="--sp-font: &quot;Plus Jakarta Sans&quot;, system-ui, -apple-system, &quot;Segoe UI&quot;, Roboto, sans-serif; --sp-font-heading: &quot;Plus Jakarta Sans&quot;, system-ui, -apple-system, &quot;Segoe UI&quot;, Roboto, sans-serif; --sp-primary: #845CD4; --sp-primary-contrast: #FFFFFF; --sp-primary-shade: color-mix(in srgb, var(--sp-primary) 14%, transparent); --sp-accent: #3CB4AC; --sp-accent-contrast: #FFFFFF; --sp-accent-shade: color-mix(in srgb, var(--sp-accent) 16%, transparent); --sp-success: #4CBC7C; --sp-warning: #F5B544; --sp-danger: #E5484D; --sp-info: #3CB4AC; --sp-bg: #FFFFFF; --sp-surface: #FFFFFF; --sp-surface-2: #F7F7FB; --sp-border: #ECECF2; --sp-text: #0C0C14; --sp-text-muted: #6A6A7C; --sp-highlight: color-mix(in srgb, var(--sp-primary) 10%, var(--sp-surface)); --sp-field-bg: var(--sp-surface); --sp-field-border: var(--sp-border); --sp-header-bg: var(--sp-surface); --sp-header-text: var(--sp-text); --sp-nav-bg: #FFFFFF; --sp-nav-text: #3A3A4C; --sp-nav-hover-bg: color-mix(in srgb, var(--sp-nav-active-text) 8%, transparent); --sp-nav-active-bg: #F2ECFC; --sp-nav-active-text: #845CD4; --sp-nav-item-radius: 999px; --sp-login-bg: #0C0C14; --sp-radius-sm: 8px; --sp-radius-md: 14px; --sp-radius-lg: 24px; --sp-radius-pill: 999px; --sp-btn-radius: 999px; --sp-field-radius: 12px; --sp-btn-padding-y: .75rem; --sp-btn-padding-x: 1.5rem; --sp-shadow-sm: 0 1px 2px rgba(16,24,40,.05), 0 1px 3px rgba(16,24,40,.07); --sp-shadow-md: 0 4px 12px rgba(16,24,40,.08); --sp-shadow-lg: 0 16px 40px rgba(16,24,40,.12)">
+  <div class="mock">
+    <aside><i></i><i class="on"></i><i></i><i></i></aside>
+    <main>
+      <div class="panel"><b>Revenue</b><strong>$42,180</strong><div class="chips"><span style="background:#845CD4" title="#845CD4"></span><span style="background:#3CB4AC" title="#3CB4AC"></span><span style="background:#4CBC7C" title="#4CBC7C"></span><span style="background:#B4F4FC" title="#B4F4FC"></span><span style="background:#9484C4" title="#9484C4"></span><span style="background:#F5B544" title="#F5B544"></span><span style="background:#A4B4E4" title="#A4B4E4"></span><span style="background:#E5484D" title="#E5484D"></span></div></div>
+      <div class="row"><button class="hot">Primary</button><button>Secondary</button></div>
+    </main>
+  </div>
+  <h2>Zeus</h2>
+  <p>landing-page system: teal + violet on white, dark hero bands, pill CTAs, 630+ web blocks</p>
+  <small>Landing pages &middot; light &middot; <a href="https://www.setproduct.com/templates/zeus">kit</a></small>
+</article>
+<article class="card" style="--sp-font: &quot;Poppins&quot;, system-ui, -apple-system, &quot;Segoe UI&quot;, Roboto, sans-serif; --sp-font-heading: &quot;Poppins&quot;, system-ui, -apple-system, &quot;Segoe UI&quot;, Roboto, sans-serif; --sp-primary: #6C5CE4; --sp-primary-contrast: #FFFFFF; --sp-primary-shade: color-mix(in srgb, var(--sp-primary) 14%, transparent); --sp-accent: #FCCC6C; --sp-accent-contrast: #2B2340; --sp-accent-shade: color-mix(in srgb, var(--sp-accent) 16%, transparent); --sp-success: #04B494; --sp-warning: #FCCC6C; --sp-danger: #F0506E; --sp-info: #54ECC4; --sp-bg: #FFFFFF; --sp-surface: #FFFFFF; --sp-surface-2: #F7F6FE; --sp-border: #ECEAF7; --sp-text: #1E1A33; --sp-text-muted: #6D6887; --sp-highlight: color-mix(in srgb, var(--sp-primary) 10%, var(--sp-surface)); --sp-field-bg: var(--sp-surface); --sp-field-border: var(--sp-border); --sp-header-bg: var(--sp-surface); --sp-header-text: var(--sp-text); --sp-nav-bg: #FFFFFF; --sp-nav-text: #3F3A59; --sp-nav-hover-bg: color-mix(in srgb, var(--sp-nav-active-text) 8%, transparent); --sp-nav-active-bg: #EEEBFD; --sp-nav-active-text: #6C5CE4; --sp-nav-item-radius: 10px; --sp-radius-sm: 8px; --sp-radius-md: 12px; --sp-radius-lg: 20px; --sp-radius-pill: 999px; --sp-btn-radius: 10px; --sp-field-radius: 10px; --sp-shadow-sm: 0 1px 2px rgba(16,24,40,.05), 0 1px 3px rgba(16,24,40,.07); --sp-shadow-md: 0 4px 12px rgba(16,24,40,.08); --sp-shadow-lg: 0 16px 40px rgba(16,24,40,.12)">
+  <div class="mock">
+    <aside><i></i><i class="on"></i><i></i><i></i></aside>
+    <main>
+      <div class="panel"><b>Revenue</b><strong>$42,180</strong><div class="chips"><span style="background:#6C5CE4" title="#6C5CE4"></span><span style="background:#FCCC6C" title="#FCCC6C"></span><span style="background:#04B494" title="#04B494"></span><span style="background:#54ECC4" title="#54ECC4"></span><span style="background:#A49CFC" title="#A49CFC"></span><span style="background:#F0506E" title="#F0506E"></span><span style="background:#FCECAC" title="#FCECAC"></span><span style="background:#2B2340" title="#2B2340"></span></div></div>
+      <div class="row"><button class="hot">Primary</button><button>Secondary</button></div>
+    </main>
+  </div>
+  <h2>Figma Landing Pages</h2>
+  <p>colourful, trendy landing blocks: violet, sunshine yellow, mint on bright colour-block sections</p>
+  <small>Landing pages &middot; light &middot; <a href="https://www.setproduct.com/templates/landing">kit</a></small>
+</article>
+<article class="card" style="--sp-font: &quot;Inter&quot;, system-ui, -apple-system, &quot;Segoe UI&quot;, Roboto, sans-serif; --sp-font-heading: &quot;Inter&quot;, system-ui, -apple-system, &quot;Segoe UI&quot;, Roboto, sans-serif; --sp-primary: #347CF4; --sp-primary-contrast: #FFFFFF; --sp-primary-shade: color-mix(in srgb, var(--sp-primary) 14%, transparent); --sp-accent: #FC5C54; --sp-accent-contrast: #FFFFFF; --sp-accent-shade: color-mix(in srgb, var(--sp-accent) 16%, transparent); --sp-success: #22C55E; --sp-warning: #FCCC6C; --sp-danger: #FC5C54; --sp-info: #347CF4; --sp-bg: #FFFFFF; --sp-surface: #FFFFFF; --sp-surface-2: #F5F8FF; --sp-border: #E6EBF5; --sp-text: #0F1729; --sp-text-muted: #64708A; --sp-highlight: color-mix(in srgb, var(--sp-primary) 10%, var(--sp-surface)); --sp-field-bg: var(--sp-surface); --sp-field-border: var(--sp-border); --sp-header-bg: var(--sp-surface); --sp-header-text: var(--sp-text); --sp-nav-bg: #FFFFFF; --sp-nav-text: #36405A; --sp-nav-hover-bg: color-mix(in srgb, var(--sp-nav-active-text) 8%, transparent); --sp-nav-active-bg: #EAF1FF; --sp-nav-active-text: #347CF4; --sp-nav-item-radius: 8px; --sp-radius-sm: 6px; --sp-radius-md: 10px; --sp-radius-lg: 16px; --sp-radius-pill: 999px; --sp-btn-radius: 8px; --sp-field-radius: 8px; --sp-shadow-sm: 0 1px 2px rgba(16,24,40,.05), 0 1px 3px rgba(16,24,40,.07); --sp-shadow-md: 0 4px 12px rgba(16,24,40,.08); --sp-shadow-lg: 0 16px 40px rgba(16,24,40,.12)">
+  <div class="mock">
+    <aside><i></i><i class="on"></i><i></i><i></i></aside>
+    <main>
+      <div class="panel"><b>Revenue</b><strong>$42,180</strong><div class="chips"><span style="background:#347CF4" title="#347CF4"></span><span style="background:#FC5C54" title="#FC5C54"></span><span style="background:#22C55E" title="#22C55E"></span><span style="background:#FCCC6C" title="#FCCC6C"></span><span style="background:#A4C4FC" title="#A4C4FC"></span><span style="background:#8CEC8C" title="#8CEC8C"></span><span style="background:#C4ECFC" title="#C4ECFC"></span><span style="background:#7C5CFC" title="#7C5CFC"></span></div></div>
+      <div class="row"><button class="hot">Primary</button><button>Secondary</button></div>
+    </main>
+  </div>
+  <h2>Figma Website templates</h2>
+  <p>140+ dark &amp; light website blocks: trustworthy blue, coral accent, mixable light/dark sections</p>
+  <small>Landing pages &middot; light, dark &middot; <a href="https://www.setproduct.com/templates/website">kit</a></small>
+</article>
+<article class="card" style="--sp-font: &quot;Plus Jakarta Sans&quot;, system-ui, -apple-system, &quot;Segoe UI&quot;, Roboto, sans-serif; --sp-font-heading: &quot;Fredoka&quot;, system-ui, -apple-system, &quot;Segoe UI&quot;, Roboto, sans-serif; --sp-primary: #F49444; --sp-primary-contrast: #FFFFFF; --sp-primary-shade: color-mix(in srgb, var(--sp-primary) 14%, transparent); --sp-accent: #ACE4C4; --sp-accent-contrast: #24533B; --sp-accent-shade: color-mix(in srgb, var(--sp-accent) 16%, transparent); --sp-success: #3FAF7A; --sp-warning: #F4DC84; --sp-danger: #E8604C; --sp-info: #C4BCF4; --sp-bg: #FCF4EC; --sp-surface: #FFFDF9; --sp-surface-2: #FFF6EA; --sp-border: #F0DCC8; --sp-text: #4A2A1C; --sp-text-muted: #8C6B5C; --sp-highlight: #FFEBD6; --sp-field-bg: #FFFDF9; --sp-field-border: var(--sp-border); --sp-header-bg: #FCF4EC; --sp-header-text: var(--sp-text); --sp-nav-bg: #FCF4EC; --sp-nav-text: #74341C; --sp-nav-hover-bg: color-mix(in srgb, var(--sp-nav-active-text) 8%, transparent); --sp-nav-active-bg: #FFE2C4; --sp-nav-active-text: #74341C; --sp-nav-item-radius: 999px; --sp-nav-item-inset: 10px; --sp-radius-sm: 14px; --sp-radius-md: 20px; --sp-radius-lg: 32px; --sp-radius-pill: 999px; --sp-btn-radius: 999px; --sp-field-radius: 16px; --sp-border-width: 2px; --sp-btn-padding-y: .75rem; --sp-btn-padding-x: 1.5rem; --sp-btn-font-size: .9375rem; --sp-btn-weight: 700; --sp-btn-hot-shadow: 0 5px 0 #C9702A; --sp-heading-tracking: 0; --sp-shadow-sm: 6px 6px 0 rgba(116,52,28,.10), inset -3px -3px 0 rgba(0,0,0,.04), inset 3px 3px 0 rgba(255,255,255,.75); --sp-shadow-md: 10px 10px 0 rgba(116,52,28,.12), inset -4px -4px 0 rgba(0,0,0,.05), inset 4px 4px 0 rgba(255,255,255,.8); --sp-shadow-lg: 16px 16px 0 rgba(116,52,28,.14), inset -5px -5px 0 rgba(0,0,0,.05), inset 5px 5px 0 rgba(255,255,255,.8)">
+  <div class="mock">
+    <aside><i></i><i class="on"></i><i></i><i></i></aside>
+    <main>
+      <div class="panel"><b>Revenue</b><strong>$42,180</strong><div class="chips"><span style="background:#F49444" title="#F49444"></span><span style="background:#ACE4C4" title="#ACE4C4"></span><span style="background:#C4BCF4" title="#C4BCF4"></span><span style="background:#F4DC84" title="#F4DC84"></span><span style="background:#E8604C" title="#E8604C"></span><span style="background:#74341C" title="#74341C"></span><span style="background:#3FAF7A" title="#3FAF7A"></span><span style="background:#ECCCB4" title="#ECCCB4"></span></div></div>
+      <div class="row"><button class="hot">Primary</button><button>Secondary</button></div>
+    </main>
+  </div>
+  <h2>Claylo</h2>
+  <p>claymorphism: warm cream canvas, puffy pastel clay cards, chunky 3D push buttons, Fredoka</p>
+  <small>Landing pages &middot; light &middot; <a href="https://www.setproduct.com/templates/claylo">kit</a></small>
+</article>
+<article class="card" style="--sp-font: &quot;Inter&quot;, system-ui, -apple-system, &quot;Segoe UI&quot;, Roboto, sans-serif; --sp-font-heading: &quot;Sora&quot;, system-ui, -apple-system, &quot;Segoe UI&quot;, Roboto, sans-serif; --sp-primary: #44BCFC; --sp-primary-contrast: #050505; --sp-primary-shade: color-mix(in srgb, var(--sp-primary) 14%, transparent); --sp-accent: #14FC9C; --sp-accent-contrast: #050505; --sp-accent-shade: color-mix(in srgb, var(--sp-accent) 16%, transparent); --sp-success: #14FC9C; --sp-warning: #FFC857; --sp-danger: #FC6CC4; --sp-info: #944CFC; --sp-bg: #050505; --sp-surface: rgba(255,255,255,.04); --sp-surface-2: rgba(255,255,255,.07); --sp-border: rgba(255,255,255,.10); --sp-text: #F5F5F7; --sp-text-muted: #9A9AA3; --sp-highlight: rgba(68,188,252,.12); --sp-field-bg: rgba(255,255,255,.05); --sp-field-border: var(--sp-border); --sp-header-bg: rgba(5,5,5,.7); --sp-header-text: var(--sp-text); --sp-nav-bg: #0A0A0B; --sp-nav-text: #C8C8D0; --sp-nav-hover-bg: color-mix(in srgb, var(--sp-nav-active-text) 8%, transparent); --sp-nav-active-bg: rgba(68,188,252,.16); --sp-nav-active-text: #FFFFFF; --sp-nav-item-radius: 999px; --sp-nav-item-inset: 10px; --sp-login-bg: radial-gradient(80% 60% at 50% 0%, #10233a 0%, #050505 70%); --sp-radius-sm: 10px; --sp-radius-md: 16px; --sp-radius-lg: 28px; --sp-radius-pill: 999px; --sp-btn-radius: 999px; --sp-field-radius: 14px; --sp-shadow-sm: 0 0 0 1px rgba(255,255,255,.03); --sp-shadow-md: 0 8px 24px rgba(0,0,0,.45); --sp-shadow-lg: 0 24px 60px rgba(0,0,0,.55), 0 0 48px color-mix(in srgb, var(--sp-primary) 18%, transparent)">
+  <div class="mock">
+    <aside><i></i><i class="on"></i><i></i><i></i></aside>
+    <main>
+      <div class="panel"><b>Revenue</b><strong>$42,180</strong><div class="chips"><span style="background:#44BCFC" title="#44BCFC"></span><span style="background:#14FC9C" title="#14FC9C"></span><span style="background:#944CFC" title="#944CFC"></span><span style="background:#FC6CC4" title="#FC6CC4"></span><span style="background:#847CF4" title="#847CF4"></span><span style="background:#FFC857" title="#FFC857"></span><span style="background:#04144C" title="#04144C"></span><span style="background:#A5F3FC" title="#A5F3FC"></span></div></div>
+      <div class="row"><button class="hot">Primary</button><button>Secondary</button></div>
+    </main>
+  </div>
+  <h2>Levitate</h2>
+  <p>3D scene presentation style: jet-black stage, neon sky/green/violet, glassy floating panels</p>
+  <small>Landing pages &middot; dark &middot; <a href="https://www.setproduct.com/templates/levitate">kit</a></small>
+</article>
+</section></body></html>
