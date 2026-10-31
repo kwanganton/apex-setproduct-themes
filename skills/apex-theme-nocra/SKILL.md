@@ -11,9 +11,15 @@ Read `../apex-setproduct-themes/SKILL.md` first for the shared method (native-fi
 component map). This file only holds what is specific to Nocra.
 
 ## Preview
-![Nocra on APEX Universal Theme](https://raw.githubusercontent.com/kwanganton/apex-setproduct-themes/main/docs/screenshots/nocra.jpg)
+**Dark**
 
-*Dark mode on Oracle's Universal Theme reference app (APEX 26.2, Interactive Report page, stock markup + this theme's CSS only).*
+![Nocra dark mode on APEX Universal Theme](https://raw.githubusercontent.com/kwanganton/apex-setproduct-themes/main/docs/screenshots/nocra.jpg)
+
+**Light**
+
+![Nocra light mode on APEX Universal Theme](https://raw.githubusercontent.com/kwanganton/apex-setproduct-themes/main/docs/screenshots/nocra-light.jpg)
+
+*Oracle's Universal Theme reference app (APEX 26.2, Interactive Report page), stock markup + this theme's CSS only.*
 
 ## The look
 - Deep midnight-navy canvas with soft glows; mint-green primary actions.

@@ -11,9 +11,11 @@ Read `../apex-setproduct-themes/SKILL.md` first for the shared method (native-fi
 component map). This file only holds what is specific to Android UI kit.
 
 ## Preview
-![Android UI kit on APEX Universal Theme](https://raw.githubusercontent.com/kwanganton/apex-setproduct-themes/main/docs/screenshots/android.jpg)
+**Light**
 
-*Light mode on Oracle's Universal Theme reference app (APEX 26.2, Interactive Report page, stock markup + this theme's CSS only).*
+![Android UI kit light mode on APEX Universal Theme](https://raw.githubusercontent.com/kwanganton/apex-setproduct-themes/main/docs/screenshots/android.jpg)
+
+*Oracle's Universal Theme reference app (APEX 26.2, Interactive Report page), stock markup + this theme's CSS only.*
 
 ## The look
 - Indigo-blue primary, amber/orange accents, Roboto type.

@@ -11,9 +11,11 @@ Read `../apex-setproduct-themes/SKILL.md` first for the shared method (native-fi
 component map). This file only holds what is specific to Zeus.
 
 ## Preview
-![Zeus on APEX Universal Theme](https://raw.githubusercontent.com/kwanganton/apex-setproduct-themes/main/docs/screenshots/zeus.jpg)
+**Light**
 
-*Light mode on Oracle's Universal Theme reference app (APEX 26.2, Interactive Report page, stock markup + this theme's CSS only).*
+![Zeus light mode on APEX Universal Theme](https://raw.githubusercontent.com/kwanganton/apex-setproduct-themes/main/docs/screenshots/zeus.jpg)
+
+*Oracle's Universal Theme reference app (APEX 26.2, Interactive Report page), stock markup + this theme's CSS only.*
 
 ## The look
 - White sections alternating with near-black hero/CTA bands.

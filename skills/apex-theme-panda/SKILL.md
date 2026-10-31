@@ -11,9 +11,15 @@ Read `../apex-setproduct-themes/SKILL.md` first for the shared method (native-fi
 component map). This file only holds what is specific to Panda.
 
 ## Preview
-![Panda on APEX Universal Theme](https://raw.githubusercontent.com/kwanganton/apex-setproduct-themes/main/docs/screenshots/panda.jpg)
+**Light**
 
-*Light mode on Oracle's Universal Theme reference app (APEX 26.2, Interactive Report page, stock markup + this theme's CSS only).*
+![Panda light mode on APEX Universal Theme](https://raw.githubusercontent.com/kwanganton/apex-setproduct-themes/main/docs/screenshots/panda.jpg)
+
+**Dark**
+
+![Panda dark mode on APEX Universal Theme](https://raw.githubusercontent.com/kwanganton/apex-setproduct-themes/main/docs/screenshots/panda-dark.jpg)
+
+*Oracle's Universal Theme reference app (APEX 26.2, Interactive Report page), stock markup + this theme's CSS only.*
 
 ## The look
 - White content cards on a cool light-grey canvas; dark navy side navigation.

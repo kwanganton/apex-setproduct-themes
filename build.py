@@ -236,17 +236,29 @@ Paste into each Chart region's **Attributes > Advanced > Initialization JavaScri
 """
 
 
+def shot_name(theme, mode):
+    """Default mode is <slug>.jpg; the alternate mode is <slug>-<mode>.jpg."""
+    return f"{theme['slug']}.jpg" if mode == theme["modes"][0] else f"{theme['slug']}-{mode}.jpg"
+
+
+def shots(theme):
+    """(mode, filename) for every mode that has a screenshot, default first."""
+    return [(m, shot_name(theme, m)) for m in theme["modes"] if (SHOTS / shot_name(theme, m)).exists()]
+
+
 def has_shot(theme):
-    return (SHOTS / f"{theme['slug']}.jpg").exists()
+    return bool(shots(theme))
 
 
 def preview_md(theme):
     if not has_shot(theme):
         return ""
+    imgs = "\n\n".join(f"**{m.capitalize()}**\n\n![{theme['name']} {m} mode on APEX Universal Theme]({RAW}/{f})"
+                       for m, f in shots(theme))
     return (
-        f"\n## Preview\n![{theme['name']} on APEX Universal Theme]({RAW}/{theme['slug']}.jpg)\n\n"
-        f"*{theme['modes'][0].capitalize()} mode on Oracle's Universal Theme reference app (APEX 26.2, "
-        "Interactive Report page, stock markup + this theme's CSS only).*\n"
+        f"\n## Preview\n{imgs}\n\n"
+        "*Oracle's Universal Theme reference app (APEX 26.2, Interactive Report page), stock markup + this "
+        "theme's CSS only.*\n"
     )
 
 
@@ -255,10 +267,16 @@ def screenshot_grid(link_prefix):
     for t in THEMES:
         if not has_shot(t):
             continue
+        ss = shots(t)
+        width = "100%" if len(ss) == 1 else "49%"
+        imgs = " ".join(
+            f'<a href="docs/screenshots/{f}"><img src="docs/screenshots/{f}" width="{width}" '
+            f'alt="{html.escape(t["name"])} {m} mode"></a>' for m, f in ss
+        )
         cells.append(
-            f'<td width="50%" valign="top"><a href="{link_prefix}apex-theme-{t["slug"]}/SKILL.md">'
-            f'<img src="docs/screenshots/{t["slug"]}.jpg" alt="{html.escape(t["name"])} theme"></a><br>'
-            f'<b>{html.escape(t["name"])}</b> &middot; {t["modes"][0]}<br><sub>{html.escape(t["summary"])}</sub></td>'
+            f'<td width="50%" valign="top">{imgs}<br>'
+            f'<a href="{link_prefix}apex-theme-{t["slug"]}/SKILL.md"><b>{html.escape(t["name"])}</b></a> &middot; '
+            f'{" / ".join(m for m, _ in ss)}<br><sub>{html.escape(t["summary"])}</sub></td>'
         )
     rows = ["<tr>" + "".join(cells[i:i + 2]) + "</tr>" for i in range(0, len(cells), 2)]
     return "<table>\n" + "\n".join(rows) + "\n</table>"
@@ -288,8 +306,11 @@ def gallery():
         tk = dict(tokens_for(t, m))
         chips = "".join(f'<span style="background:{c}" title="{c}"></span>' for c in t["chart"])
         style = "; ".join(f"--sp-{k}: {v}" for k, v in tk.items())
-        shot = (f'<a href="screenshots/{t["slug"]}.jpg"><img class="shot" src="screenshots/{t["slug"]}.jpg" '
-                f'alt="{html.escape(t["name"])} on APEX" loading="lazy"></a>') if has_shot(t) else ""
+        shot = "".join(
+            f'<a href="screenshots/{f}" title="{mo} mode"><img class="shot" src="screenshots/{f}" '
+            f'alt="{html.escape(t["name"])} {mo} mode on APEX" loading="lazy"></a>' for mo, f in shots(t)
+        )
+        shot = f'<div class="shots">{shot}</div>' if shot else ""
         cards.append(f"""
 <article class="card" style="{html.escape(style)}">
   {shot}
@@ -323,7 +344,8 @@ header p {{ margin:0; color:var(--muted) }}
 .card {{ border:1px solid var(--line); border-radius:14px; padding:12px; background:var(--page) }}
 .card h2 {{ margin:12px 4px 2px; font-size:17px }} .card p {{ margin:0 4px 6px; color:var(--muted); font-size:13px }}
 .card small {{ margin:0 4px; color:var(--muted); font-size:12px }} .card a {{ color:inherit }}
-.shot {{ display:block; width:100%; height:auto; border-radius:10px; border:1px solid var(--line); margin-bottom:10px }}
+.shots {{ display:flex; gap:6px; margin-bottom:10px }} .shots a {{ flex:1; min-width:0 }}
+.shot {{ display:block; width:100%; height:auto; border-radius:8px; border:1px solid var(--line) }}
 .mock {{ display:flex; height:170px; border-radius:10px; overflow:hidden; background:var(--sp-bg); font-family:var(--sp-font); color:var(--sp-text); border:1px solid var(--sp-border) }}
 .mock aside {{ width:52px; background:var(--sp-nav-bg); padding:10px 8px; display:flex; flex-direction:column; gap:7px }}
 .mock aside i {{ height:9px; border-radius:var(--sp-nav-item-radius,4px); background:color-mix(in srgb,var(--sp-nav-text) 35%,transparent) }}

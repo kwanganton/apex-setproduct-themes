@@ -11,9 +11,11 @@ Read `../apex-setproduct-themes/SKILL.md` first for the shared method (native-fi
 component map). This file only holds what is specific to Levitate.
 
 ## Preview
-![Levitate on APEX Universal Theme](https://raw.githubusercontent.com/kwanganton/apex-setproduct-themes/main/docs/screenshots/levitate.jpg)
+**Dark**
 
-*Dark mode on Oracle's Universal Theme reference app (APEX 26.2, Interactive Report page, stock markup + this theme's CSS only).*
+![Levitate dark mode on APEX Universal Theme](https://raw.githubusercontent.com/kwanganton/apex-setproduct-themes/main/docs/screenshots/levitate.jpg)
+
+*Oracle's Universal Theme reference app (APEX 26.2, Interactive Report page), stock markup + this theme's CSS only.*
 
 ## The look
 - Jet-black stage with floating 3D objects; neon sky blue, mint green, violet and pink.
